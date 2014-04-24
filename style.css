@@ -24,6 +24,7 @@ TAG DEFINITIONS
 body {
 	background: #faf8f3 url(images/bg-pattern.png) center top;
 	font-family: 'Montserrat', sans-serif;
+	color: #555;
 }
 
 h1, h2, h3, h4 {
@@ -164,6 +165,7 @@ NAVIGATION
 /******************************************
 COMMON CLASSES
 ******************************************/
+
 .slide {
 	position: relative;
 	margin: 0;
@@ -246,7 +248,7 @@ COMMON CLASSES
 }
 
 .slide_tagline {
-	text-shadow: none;
+text-shadow: 0px 2px 3px #ccc;
 	font-size: 3.3em;
 	text-align: center;
 	line-height: 1.6em;
@@ -497,6 +499,9 @@ SLIDE 6  MARKET SIZE
 /******************************************
 SLIDE 7 CUSTOMER ADOPTION
 ******************************************/
+#slide7 .box {
+	text-align: left;
+}
 #customeradoption {
 	width: 940px;
 	height: 1100px;

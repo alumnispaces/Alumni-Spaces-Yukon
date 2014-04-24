@@ -84,7 +84,7 @@
 						},
 						slide_5:	{
 							head: 		'Product',
-							tagline: 	'Every dream has its own journey',
+							tagline: 	'Our product is Awesomesauce',
 							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/alumni_spaces_product.jpg'
 						},
 						slide_6:	{
@@ -93,8 +93,14 @@
 							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/alumni_spaces_product.jpg',
 							tagline: 	'<span class="light">2012 Donations to Education</span><h4 class="impact_number">$31 Billion</h4>',
 							bottomhead: '2 Sources of Revenue',
-							box1:		'<h4>Local Groups</h4><p>Everest develops high-quality content for brands, including suggested Steps and Challenges</p><strong>Annual: <span class="teal">$200</span></strong><h5 class="light">Current Clients</h5><br /><img class="img-responsive" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/local_logos.png" />',
-							box2:		'<h4>Organizations</h4><p>Everest will generate very powerful impressions compared to paid search or social advertising</p><strong>Setup: <span class="teal">$8,000</span><br />Annual <span class="teal">$15,000</span></strong>'
+							box1:		'<h4>Local Groups</h4><p>Independent local groups who need a good-looking website and a centralized outbound communications hub.</p><hr /><h4 class="impact_number"><span class="teal">$200</span> Annually',
+							box2:		'<h4>Organizations</h4><p>With groups spread out around the globe, they may have 100+ local groups who can use Alumni Spaces to power their sites. In addition, the Organization gains tools which grant them previously unavailabile insight into the overall operation and health of their member groups.</p><hr /><h4 class="impact_number"><span class="teal">$8,000</span> Setup<span class="light" style="font-size: .25em; margin-left: 5px;">(one time)</span><br /><span style="width: 100%; text-align: center; float: left;">+</span><br /><span class="teal">$15,000</span> Annually'
+						},
+						slide_7: {
+							head:	'Customer Acquisition',
+							tagline:	'How are we going to get that cheddar?',
+							box1:	'<h4>Brands</h4><p>Our brand partners will promote their challenges on Facebook, twitter and other media channels.</p><hr /><h5 class="light">Current Clients</h5><br /><img class="img-responsive" style="margin: 0 auto;" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/local_logos.png" />',
+							box2:	'<h4>Heros</h4>World class athletes, teams and thought leaders will engage with fans, expand their following via Everest. Instead of jsut communicating whats on their mind, heros will share the daily steps and moments fueling their performance.'
 						}
 				}
 		};
@@ -144,6 +150,12 @@
 		apply_text('slide_6_bottomhead',yukon.slides.slide_6.bottomhead);
 		apply_text('slide_6_box1',yukon.slides.slide_6.box1);
 		apply_text('slide_6_box2',yukon.slides.slide_6.box2);
+		
+		//Slide 7
+		apply_text('slide_7_head',yukon.slides.slide_7.head);
+		apply_text('slide_7_tagline',yukon.slides.slide_7.tagline);
+		apply_text('slide_7_box1',yukon.slides.slide_7.box1);
+		apply_text('slide_7_box2',yukon.slides.slide_7.box2);
 		
 		//Team
 		apply_bg('team_1_photo',yukon.team_1.photo);
@@ -418,28 +430,36 @@
 
 <!-- SLIDE 7 -->
 
-	<div class="slide" id="slide7">
-
-		<div class="container">
-			<div id="customeradoption"></div>
+<div class="slide container-fluid" id="slide7">
+	<div class="row section_header">
+	    <hr class="col-md-4" />
+	    <div class="col-md-4">
+	      <h2 id="slide_7_head" class="section_head"></h2>
+	    </div>
+	    <hr class="col-md-4" />
+	</div> <!-- /row -->
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h3 id="slide_7_tagline" class="slide_tagline"></h3>
+			<div id="slide_7_body">
+			</div><!--/5 body -->
 		</div>
-
-	</div>
+	</div><!-- /row -->
+	 <div class="row customers">
+    	<div class="col-md-4 col-md-offset-2">
+    		<div class="box" id="slide_7_box1">
+    		</div>
+    	</div>
+    	<div class="col-md-4">
+    		<div class="box" id="slide_7_box2">
+    		</div>
+    	</div>
+    </div><!-- /row -->
+</div><!-- /slide -->
 
 <!-- SLIDE 8 -->
 
 	<div class="slide" id="slide8">
-		<div class="container">
-			<div id="b-plan">
-				<img src="images/brands.png" height="2600" width="900">
-			</div>
-		</div>
-
-	</div>
-
-<!-- SLIDE 9A -->
-
-	<div class="slide" id="slide9">
 		<div class="container">
 			<div id="accomplishments"></div>
 		</div>
