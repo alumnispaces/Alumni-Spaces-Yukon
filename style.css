@@ -228,7 +228,7 @@ COMMON CLASSES
 	background: url(images/dotted-bg.png) repeat-x 0 60px;
 }
 
-h2.section_head{
+.section_head{
 	background: #fff;
 	padding: 15px;
 	text-align: center;
@@ -245,6 +245,33 @@ h2.section_head{
 	padding: 0;
 }
 
+.slide_tagline {
+	text-shadow: none;
+	font-size: 3.3em;
+	text-align: center;
+	line-height: 1.6em;
+	margin: 1em 0;
+}
+
+.light {
+	color: #AAA;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.impact_number {
+	color: #555;
+	font-size: 2.5em;
+}
+
+.dashed {
+	border-left: 2px dashed #ccc;
+}
+
+.teal {
+	color: #39c7c8;
+}
 /******************************************
 SLIDE 1
 ******************************************/
@@ -371,19 +398,57 @@ SLIDE 3  TEAM
 /******************************************
 SLIDE 4   OPPORTUNITY
 ******************************************/
-#problems_solutions {
-	width: 940px;
-	height: 1400px;
-	background: url(images/problems-solutions.jpg) no-repeat;
+#slide_4_body {
+	background-repeat: no-repeat;
 }
 
+h2#slide_4_midhead, h2#slide_4_bottomhead{
+	margin: 2em 0 0 0;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-top: 14px solid #fff;
+	margin: 0 auto;
+}
+
+.arrow-orange {
+	border-top: 14px solid #ef6f01;
+}
+
+.arrow-teal {
+	border-top: 14px solid #39c7c8;
+}
+
+.box {
+	background: #fff;
+	margin: 1em;
+	text-align: center;
+	padding: 1em;
+}
+
+.box .glyphicon {
+	font-size: 1.5em;
+}
+
+.solution .box {
+	border: 2px #fff groove;
+	text-align: center;
+	padding: 3em;
+	color: #222;
+	font-size: 1.5em;
+	margin-top: 1em;
+	text-shadow: 0px 2px 3px #ccc;
+}
 /******************************************
 SLIDE 5   PRODUCT
 ******************************************/
-#product {
-	width: 960px;
-	height: 930px;
-	background: url(images/problems-solutions.jpg) no-repeat;
+#slide_5_body {
+	height: 640px;
+	background-repeat: no-repeat;
 }
 
 /******************************************
@@ -393,6 +458,40 @@ SLIDE 6  MARKET SIZE
 	width: 940px;
 	height: 1900px;
 	background: url(images/users.jpg) no-repeat;
+}
+
+#slide6 .box { 
+	padding: 3em;
+	margin-bottom: 0;
+}
+
+#slide6 .box .slide_tagline {
+	line-height: 1em;
+	margin: .5em 0;
+}
+
+#slide_6_tagline {
+	text-align: center;
+	margin-top: 2em;
+}
+
+#slide6 .vert {
+	margin-top: -1em;
+	height: 5em;
+}
+
+#slide_6_bottomhead {
+	line-height: 1em;
+	font-size: inherit;
+	margin-top: -.5em;
+}
+
+#slide6 .revenue {
+	margin-top: 2em;
+}
+#slide6 .revenue .box {
+	padding: 2em;
+	text-align: left;
 }
 
 /******************************************

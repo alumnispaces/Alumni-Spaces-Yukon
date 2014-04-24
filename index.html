@@ -12,10 +12,6 @@
 	<meta name="robots" content="index,follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Typekit
-	<script type="text/javascript" async="" src="images/ga.js"></script><script type="text/javascript" src="images/qhk8dlu.js"></script>
-	<style type="text/css">.tk-proxima-nova,h1,h2,h3,p{font-family:"proxima-nova",sans-serif;}.tk-ff-meta-web-pro{font-family:"ff-meta-web-pro",sans-serif;}</style><link rel="stylesheet" href="http://use.typekit.com/c/a8a09b/ff-meta-web-pro:i4:i7:n4:n7,proxima-nova:n1:n4:n6:n7:n9.TfW:H:2,YD1:H:2,YD2:H:2,YD0:H:2,Vmv:H:1,W0V:H:1,W0X:H:1,W0Y:H:1,Vn7:H:1/d?3bb2a6e53c9684ffdc9a9bf21b5b2a6212c659a382e93df341d51f1b6823921008e8e15f74a82dcee7e885b7186e8b0926679b778abe29dac72730a7dbb929f4c17df4fff0bdd1cdb6f1e5ff002f275e2d237923aa5e74b4cbc35d07a8ccfe400131cf398970583fbce7c89384e988e16cf41c356d7ac9696dfe8517e921a815b4190cb66db62a6b17c0dc2a49"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
--->
 	<!-- Javascript Plugins (Full Versions for Development) -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
@@ -38,27 +34,69 @@
 				logo:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png',  //top logo 250x250
 				intro_img: 'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/intro_slide.png',
 				tagline: 	'We bring alumni home. Online.', //slide2 foreground text
-				slide2:		'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/slide2.jpg', //slide2 parallax background image 1600x1044
-				team_head: 'Our Team',
-        market_head: 'The Opportunity',
-        team_1:    {
-              name: "Andrew",
-              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/andrew.jpg", //team photo - 250x250
-              tagline: "Technology + Product Development",
-              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
-        },
-        team_2:    {
-              name: "Nick",
-              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/nick.jpg", //team photo - 250x250
-              tagline: "National Sales/Support + QA Testing",
-              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
-        },
-        team_3:    {
-              name: "Rachel",
-              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/rachel.jpg", //team photo - 250x250
-              tagline: "Group Sales/Support + Market",
-              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
-        },
+		        team_1:    {
+		              name: "Andrew",
+		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/andrew.jpg", //team photo - 250x250
+		              tagline: "Technology + Product Development",
+		              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+		        },
+		        team_2:    {
+		              name: "Nick",
+		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/nick.jpg", //team photo - 250x250
+		              tagline: "National Sales/Support + QA Testing",
+		              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+		        },
+		        team_3:    {
+		              name: "Rachel",
+		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/rachel.jpg", //team photo - 250x250
+		              tagline: "Group Sales/Support + Market",
+		              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+		        },
+				slides: 	{
+						slide_2:	{
+							head: 	'Our Team',
+							bg:     'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/slide2.jpg', //slide2 parallax background image 1600x1044
+						},
+						slide_4:	{
+							head:	'The Opportunity',
+							bg:		'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/slide_4bg.png',
+							tagline: 'Every person on the planet has dreams, aspirations and goals. Most are stifled by the gap between dreams and reality.',
+							midhead: 'Problem',
+							bottomhead: 'Solution',
+							bottombox: 'Provide people with the <strong>tools</strong> and <strong>community</strong> they need to make their dreams a reality.',
+							boxes:   {
+								box_1: {
+									header: 'Organization',
+									glyph:	'tower',
+									text:	'Most people do not write down their dreams, much less have a process for taking the next step , or fitting it into their busy schedule'
+								},
+								box_2: {
+									header: 'Support',
+									glyph: 	'globe',
+									text:	'Most people do not share their dreams, so they do not receive suggestions, help, encouragement, accountability or companionship'
+								},
+								box_3:	{
+									header:	'Inspiration',
+									glyph:	'fire',
+									text:	'Most people give up on their dreams too easily; they hit obstacles, gradually get discouraged and lost motivaton because they struggle.'
+								}
+							}
+						},
+						slide_5:	{
+							head: 		'Product',
+							tagline: 	'Every dream has its own journey',
+							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/alumni_spaces_product.jpg'
+						},
+						slide_6:	{
+							head:		'Market Size',
+							box_text: 	'<span class="light">Current focus:</span><br /><h3 class="slide_tagline">Alumni Associations</h3>We are currently focused on partnering with NCAA D1-level universities in the United States.',
+							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/alumni_spaces_product.jpg',
+							tagline: 	'<span class="light">2012 Donations to Education</span><h4 class="impact_number">$31 Billion</h4>',
+							bottomhead: '2 Sources of Revenue',
+							box1:		'<h4>Local Groups</h4><p>Everest develops high-quality content for brands, including suggested Steps and Challenges</p><strong>Annual: <span class="teal">$200</span></strong><h5 class="light">Current Clients</h5><br /><img class="img-responsive" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/local_logos.png" />',
+							box2:		'<h4>Organizations</h4><p>Everest will generate very powerful impressions compared to paid search or social advertising</p><strong>Setup: <span class="teal">$8,000</span><br />Annual <span class="teal">$15,000</span></strong>'
+						}
+				}
 		};
 
 		function apply_bg(id,img){
@@ -71,18 +109,49 @@
       $('#'+id).html(words);
 		}
 
+		//Intro
 		apply_bg('logo');
 		apply_bg('intro_img');
-		apply_bg('slide2');
-    apply_text('tagline');
-    apply_text('team_head');
-    apply_text('market_head');
-    apply_bg('team_1_photo',yukon.team_1.photo);
-    apply_bg('team_2_photo',yukon.team_2.photo);
-    apply_bg('team_3_photo',yukon.team_3.photo);
+		apply_text('tagline');
+
+		//Slide2
+		apply_bg('slide2',yukon.slides.slide_2.bg);
+		apply_text('slide_2_head',yukon.slides.slide_2.head);
+		
+		//slide 4
+		apply_bg('slide_4_body',yukon.slides.slide_4.bg);
+		apply_text('slide_4_head',yukon.slides.slide_4.head);
+		apply_text('slide_4_tagline',yukon.slides.slide_4.tagline);
+		apply_text('slide_4_midhead',yukon.slides.slide_4.midhead);
+		apply_text('box1_head',yukon.slides.slide_4.boxes.box_1.header);
+		apply_text('box1_text',yukon.slides.slide_4.boxes.box_1.text);
+		apply_text('box2_head',yukon.slides.slide_4.boxes.box_2.header);
+		apply_text('box2_text',yukon.slides.slide_4.boxes.box_2.text);
+		apply_text('box3_head',yukon.slides.slide_4.boxes.box_3.header);
+		apply_text('box3_text',yukon.slides.slide_4.boxes.box_3.text);
+		apply_text('slide_4_bottomhead',yukon.slides.slide_4.bottomhead);
+		apply_text('bottom_box',yukon.slides.slide_4.bottombox);
+		
+		//Slide 5
+		apply_text('slide_5_head',yukon.slides.slide_5.head);
+		apply_text('slide_5_tagline',yukon.slides.slide_5.tagline);
+		apply_bg('slide_5_body',yukon.slides.slide_5.bg);
+		
+		//Slide6
+		apply_text('slide_6_head',yukon.slides.slide_6.head);
+		apply_text('slide_6_box',yukon.slides.slide_6.box_text);
+		apply_text('slide_6_tagline',yukon.slides.slide_6.tagline);
+		apply_text('slide_6_bottomhead',yukon.slides.slide_6.bottomhead);
+		apply_text('slide_6_box1',yukon.slides.slide_6.box1);
+		apply_text('slide_6_box2',yukon.slides.slide_6.box2);
+		
+		//Team
+		apply_bg('team_1_photo',yukon.team_1.photo);
+		apply_bg('team_2_photo',yukon.team_2.photo);
+		apply_bg('team_3_photo',yukon.team_3.photo);
 		apply_text('team_1_name',yukon.team_1.name); apply_text('team_1_tagline',yukon.team_1.tagline); apply_text('team_1_about',yukon.team_1.about);
-    apply_text('team_2_name',yukon.team_2.name); apply_text('team_2_tagline',yukon.team_2.tagline); apply_text('team_2_about',yukon.team_2.about);
-    apply_text('team_3_name',yukon.team_3.name); apply_text('team_3_tagline',yukon.team_3.tagline); apply_text('team_3_about',yukon.team_3.about);
+		apply_text('team_2_name',yukon.team_2.name); apply_text('team_2_tagline',yukon.team_2.tagline); apply_text('team_2_about',yukon.team_2.about);
+		apply_text('team_3_name',yukon.team_3.name); apply_text('team_3_tagline',yukon.team_3.tagline); apply_text('team_3_about',yukon.team_3.about);
 	});
 	$(function() {
   	if(navigator.userAgent.match(/iPhone/i)){
@@ -122,7 +191,7 @@
 		<td id="nav_left"><img src="images/empty.gif"></td>
 		<td id="nav_center">
 			<div id="filler_left"></div>
-			<a href="#/" target="_blank" title="Back" id="everest"><div class="label">Back</div></a>
+			<a href="#/" target="_blank" title="Back" id="everest" style="height: 50px;"><div class="label">Back</div></a>
 			<div class="filler"></div>
 			<a href="#slide1" class="nav current" title="Introduction">1<div class="label">Introduction</div></a>
 			<div class="filler"></div>
@@ -144,11 +213,11 @@
 			<div class="filler"></div>
 			<a href="#slide10" class="nav" title="Next Steps">10<div class="label">Next Steps</div></a>
 			<div class="filler"></div>
-			<a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow Us" id="twitter"><div class="label">Follow Us</div></a>
+			<a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow Us" id="twitter" style="height: 50px;"><div class="label">Follow Us</div></a>
 			<div class="filler"></div>
-			<a href="http://www.facebook.com/alumnispaces" target="_blank" title="Find Us on Facebook" id="facebook"><div class="label">Find Us on Facebook</div></a>
+			<a href="http://www.facebook.com/alumnispaces" target="_blank" title="Find Us on Facebook" id="facebook" style="height: 50px;"><div class="label">Find Us on Facebook</div></a>
 			<div class="filler"></div>
-			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us id="angellist"><div class="label">Email Us</div></a>
+			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us" id="angellist" style="height: 50px;"><div class="label">Email Us</div></a>
 			<div id="filler_right"></div>
 		</td>
 		<td id="nav_left"><img src="images/empty.gif"></td>
@@ -178,13 +247,12 @@
     <div class="row section_header">
 				<hr class="col-md-4" />
 				<div class="col-md-4">
-					<h2 id="team_head" class="section_head"></h2>
+					<h2 id="slide_2_head" class="section_head"></h2>
 				</div>
 				<hr class="col-md-4" />
     </div> <!-- /row -->
     <div class="row team-bios">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
+      <div class="col-md-8 col-md-offset-2">
         <div class="row">
           <div class="col-md-4">
             <h3 id="team_1_name"></h3>
@@ -230,7 +298,6 @@
           </div>
         </div> <!-- /nexted row -->
       </div> <!-- /mid row 8 -->
-      <div class="col-md-2"></div>
 
     </div><!-- /team bios -->
 		</div>
@@ -242,46 +309,114 @@
     <div class="row section_header">
         <hr class="col-md-4" />
         <div class="col-md-4">
-          <h2 id="market_head" class="section_head"></h2>
+          <h2 id="slide_4_head" class="section_head"></h2>
         </div>
         <hr class="col-md-4" />
     </div> <!-- /row -->
     <div class="row">
-			<div id="problems_solutions"></div>
-    </div>
-
+			<div id="slide_4_body" class="col-md-8 col-md-offset-2">
+				<h3 id="slide_4_tagline" class="slide_tagline"></h3>
+			</div>
+			<div class="col-md-2"></div>
+    </div> <!-- /row -->
+    <div class="row section_header">
+        <div class="col-md-2 col-md-offset-5">
+          <h2 id="slide_4_midhead" class="section_head"></h2>
+				<div class="arrow-down arrow-orange"></div>
+        </div>
+    </div> <!-- /row -->
+    <div class="row problems">
+    		<div class="col-md-1"></div>
+			<div class="col-md-3 box">
+				<span class="glyphicon glyphicon-tower"></span>
+				<h4 id="box1_head"></h4>
+				<p id="box1_text"></p>
+			</div>
+			<div class="col-md-3 box">
+				<span class="glyphicon glyphicon-globe"></span>
+				<h4 id="box2_head"></h4>
+				<p id="box2_text"></p>
+			</div>
+			<div class="col-md-3 box">
+				<span class="glyphicon glyphicon-fire"></span>
+				<h4 id="box3_head"></h4>
+				<p id="box3_text"></p>
+			</div>
+    	</div>
+    </div><!-- /row -->
+     <div class="row section_header">
+        <div class="col-md-2 col-md-offset-5">
+          <h2 id="slide_4_bottomhead" class="section_head"></h2>
+				<div class="arrow-down arrow-teal"></div>
+        </div>
+    </div> <!-- /row -->
+    <div class="row solution">
+		<div class="col-md-8 col-md-offset-2">
+			<div id="bottom_box" class="box"></div>
+		</div>
+    </div><!-- /row -->
 	</div>
 
 <!-- SLIDE 5 -->
 
-<!-- 	<div class="slide" id="slide5">
-		<div class="container">
-			<div id="customer_acquisition"></div>
+<div class="slide container-fluid" id="slide5">
+    <div class="row section_header">
+        <hr class="col-md-4" />
+        <div class="col-md-4">
+          <h2 id="slide_5_head" class="section_head"></h2>
+        </div>
+        <hr class="col-md-4" />
+    </div> <!-- /row -->
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h3 id="slide_5_tagline" class="slide_tagline"></h3>
+			<div id="slide_5_body">
+			</div><!--/5 body -->
 		</div>
-	</div>  -->
+	</div><!-- /row -->
+</div><!-- /slide -->
 
 <!-- SLIDE 6 -->
 
-	<div class="slide" id="slide5">
-		<div class="container">
-			<div id="product"></div>
-			<a href="http://everest.com/appstore" target="_blank" style="display: block; width: 1000px; height: 100px;">
-				<div id="in_app_screenshots" style="text-align: center; margin-left: 30px; margin-top: -60px;">
-				</div>
-			</a>
+<div class="slide container-fluid" id="slide6">
+	<div class="row section_header">
+        <hr class="col-md-4" />
+        <div class="col-md-4">
+          <h2 id="slide_6_head" class="section_head"></h2>
+        </div>
+        <hr class="col-md-4" />
+    </div> <!-- /row -->
+    <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div id="slide_6_box" class="box"></div>
+			<div class="arrow-down arrow-orange"></div>
 		</div>
-
-	</div>
+	</div> <!-- /row -->
+    <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div id="slide_6_tagline"></div>
+			<div class="dashed vert col-md-offset-6"></div>
+		</div>
+		<div class="row section_header">
+	        <div class="col-md-2 col-md-offset-5">
+	          <div id="slide_6_bottomhead" class="section_head light teal" style="font-size: inherit;"></div>
+					<div class="arrow-down arrow-teal"></div>
+	        </div>
+		</div> <!-- /row section header-->
+    </div> <!-- /row -->
+    <div class="row revenue">
+    	<div class="col-md-4 col-md-offset-2">
+    		<div class="box" id="slide_6_box1">
+    		</div>
+    	</div>
+    	<div class="col-md-4">
+    		<div class="box" id="slide_6_box2">
+    		</div>
+    	</div>
+    </div><!-- /row -->
+</div>
 
 <!-- SLIDE 7 -->
-
-	<div class="slide" id="slide6">
-		<div class="container">
-			<div id="marketsize"></div>
-		</div>
-	</div>
-
-<!-- SLIDE 8 -->
 
 	<div class="slide" id="slide7">
 
@@ -291,7 +426,7 @@
 
 	</div>
 
-<!-- SLIDE 9 -->
+<!-- SLIDE 8 -->
 
 	<div class="slide" id="slide8">
 		<div class="container">
