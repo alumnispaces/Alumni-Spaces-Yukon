@@ -1,39 +1,33 @@
-Investors
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /******************************************
 body{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
-	font-family: "proxima-nova", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: #0C1511;
 	text-shadow: 1px 1px 0px #fff;
 }
 
 h1 {
-	font-family: "proxima-nova", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 42px;
 }
 
 *******************************************/
-
-@font-face {
-  font-family: proxima-nova;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 /******************************************
 TAG DEFINITIONS
 ******************************************/
 body {
 	background: #faf8f3 url(images/bg-pattern.png) center top;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4 {
-	font-family: proxima-nova, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #000;
 	font-weight: 400;
 	text-shadow: 1px 1px 0px #fff;
@@ -54,6 +48,10 @@ hr {
 	height: 2px;
 	border: none;
 	margin: 0;
+}
+
+.lead {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /******************************************
@@ -82,7 +80,7 @@ NAVIGATION
 			float: left;
 			position: relative;
 			width: 47px;
-			height: 22px;
+/*			height: 22px;*/
 			background: url(images/social-buttons.png) no-repeat -282px 0;
 			border-top: none;
 			padding: 18px 0 12px;
@@ -135,7 +133,7 @@ NAVIGATION
 			line-height: 13px;
 		}
 		#nav_center a.current .label, #nav_center a:hover .label {
-			font-family: proxima-nova, sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			display: block;
 		}
 		#nav_center .filler {
