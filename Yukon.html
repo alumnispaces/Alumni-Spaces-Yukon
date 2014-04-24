@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://evr.st/investors -->
+<html lang="en" class="wf-proximanova-n4-active wf-proximanova-n6-active wf-ffmetawebpro-i4-active wf-ffmetawebpro-i7-active wf-ffmetawebpro-n4-active wf-ffmetawebpro-n7-active wf-proximanova-n1-active wf-proximanova-n7-active wf-proximanova-n9-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title> Yukon Gold </title>
+
+	<meta name="description" content="Everest - Live your dreams.">
+	<meta name="author" content="Francis Pedraza, Victor Mathieux, Juan C. Mendez">
+	<meta name="copyright" content="©2013 Everest Inc.">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Typekit
+	<script type="text/javascript" async="" src="images/ga.js"></script><script type="text/javascript" src="images/qhk8dlu.js"></script>
+	<style type="text/css">.tk-proxima-nova,h1,h2,h3,p{font-family:"proxima-nova",sans-serif;}.tk-ff-meta-web-pro{font-family:"ff-meta-web-pro",sans-serif;}</style><link rel="stylesheet" href="http://use.typekit.com/c/a8a09b/ff-meta-web-pro:i4:i7:n4:n7,proxima-nova:n1:n4:n6:n7:n9.TfW:H:2,YD1:H:2,YD2:H:2,YD0:H:2,Vmv:H:1,W0V:H:1,W0X:H:1,W0Y:H:1,Vn7:H:1/d?3bb2a6e53c9684ffdc9a9bf21b5b2a6212c659a382e93df341d51f1b6823921008e8e15f74a82dcee7e885b7186e8b0926679b778abe29dac72730a7dbb929f4c17df4fff0bdd1cdb6f1e5ff002f275e2d237923aa5e74b4cbc35d07a8ccfe400131cf398970583fbce7c89384e988e16cf41c356d7ac9696dfe8517e921a815b4190cb66db62a6b17c0dc2a49"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+	<!-- Javascript Plugins (Full Versions for Development) -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.pitchdeck.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+  <!-- Bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="">
+
+  <script type="text/javascript">
+	$(document).ready(function() {
+		var yukon = {
+				logo:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png',  //top logo 250x250
+				intro_img: 'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/intro_slide.png',
+				tagline: 	'We bring alumni home. Online.', //slide2 foreground text
+				slide2:		'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/slide2.jpg', //slide2 parallax background image 1600x1044
+				team_head: 'Our Team',
+        market_head: 'The Opportunity',
+        team_1:    {
+              name: "Andrew",
+              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/andrew.jpg", //team photo - 250x250
+              tagline: "Technology + Product Development",
+              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+        },
+        team_2:    {
+              name: "Nick",
+              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/nick.jpg", //team photo - 250x250
+              tagline: "National Sales/Support + QA Testing",
+              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+        },
+        team_3:    {
+              name: "Rachel",
+              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/rachel.jpg", //team photo - 250x250
+              tagline: "Group Sales/Support + Market",
+              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+        },
+		};
+
+		function apply_bg(id,img){
+      img = img || yukon[id]; //you can specify an image in the object, or just fall back to the id
+			$('#'+id).css('background-image','url('+img+')');
+		}
+
+		function apply_text(id,words){
+      words = words || yukon[id];
+      $('#'+id).html(words);
+		}
+
+		apply_bg('logo');
+		apply_bg('intro_img');
+		apply_bg('slide2');
+    apply_text('tagline');
+    apply_text('team_head');
+    apply_text('market_head');
+    apply_bg('team_1_photo',yukon.team_1.photo);
+    apply_bg('team_2_photo',yukon.team_2.photo);
+    apply_bg('team_3_photo',yukon.team_3.photo);
+		apply_text('team_1_name',yukon.team_1.name); apply_text('team_1_tagline',yukon.team_1.tagline); apply_text('team_1_about',yukon.team_1.about);
+    apply_text('team_2_name',yukon.team_2.name); apply_text('team_2_tagline',yukon.team_2.tagline); apply_text('team_2_about',yukon.team_2.about);
+    apply_text('team_3_name',yukon.team_3.name); apply_text('team_3_tagline',yukon.team_3.tagline); apply_text('team_3_about',yukon.team_3.about);
+	});
+	$(function() {
+  	if(navigator.userAgent.match(/iPhone/i)){
+      $("#nav_center").hide();
+    }
+
+	})
+
+  	var zoomListeners = [(function(zoomLevel) {
+  	  if(zoomLevel > 1) {
+        //$("#nav_center").hide();
+  	  } else {
+  	    //$("#nav_center").show();
+  	  }
+  	})];
+
+    (function(){
+      // Poll the pixel width of the window; invoke zoom listeners
+      // if the width has been changed.
+      var lastWidth = document.documentElement.clientWidth / window.innerWidth;
+      function pollZoomFireEvent() {
+        var widthNow = document.documentElement.clientWidth / window.innerWidth;
+        if (lastWidth == widthNow) return;
+        lastWidth = widthNow;
+        // Length changed, user must have zoomed, invoke listeners.
+        for (i = zoomListeners.length - 1; i >= 0; --i) {
+          zoomListeners[i](widthNow);
+        }
+      }
+      setInterval(pollZoomFireEvent, 100);
+    })();
+  </script>
+
+<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
+<body>
+	<table id="nav"><tbody><tr>
+		<td id="nav_left"><img src="images/empty.gif"></td>
+		<td id="nav_center">
+			<div id="filler_left"></div>
+			<a href="#/" target="_blank" title="Back" id="everest"><div class="label">Back</div></a>
+			<div class="filler"></div>
+			<a href="#slide1" class="nav current" title="Introduction">1<div class="label">Introduction</div></a>
+			<div class="filler"></div>
+			<a href="#slide2" class="nav" title="Our Vision">2<div class="label">Our Vision</div></a>
+			<div class="filler"></div>
+			<a href="#slide3" class="nav" title="Team">3<div class="label">Team</div></a>
+			<div class="filler"></div>
+			<a href="#slide4" class="nav" title="The Opportunity">4<div class="label">The Opportunity</div></a>
+			<div class="filler"></div>
+			<a href="#slide5" class="nav" title="Product">5<div class="label">Product</div></a>
+			<div class="filler"></div>
+			<a href="#slide6" class="nav" title="Market Size">6<div class="label">Market Size</div></a>
+			<div class="filler"></div>
+			<a href="#slide7" class="nav" title="User Acquisition">7<div class="label">User Acquisition</div></a>
+			<div class="filler"></div>
+			<a href="#slide8" class="nav" title="Business Model">8<div class="label">Business Model</div></a>
+			<div class="filler"></div>
+			<a href="#slide9" class="nav" title="Accomplishments">9<div class="label">Accomplishments</div></a>
+			<div class="filler"></div>
+			<a href="#slide10" class="nav" title="Next Steps">10<div class="label">Next Steps</div></a>
+			<div class="filler"></div>
+			<a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow Us" id="twitter"><div class="label">Follow Us</div></a>
+			<div class="filler"></div>
+			<a href="http://www.facebook.com/alumnispaces" target="_blank" title="Find Us on Facebook" id="facebook"><div class="label">Find Us on Facebook</div></a>
+			<div class="filler"></div>
+			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us id="angellist"><div class="label">Email Us</div></a>
+			<div id="filler_right"></div>
+		</td>
+		<td id="nav_left"><img src="images/empty.gif"></td>
+	</tr></tbody></table> <!-- #nav -->
+
+<!-- SLIDE 1 -->
+
+	<div class="slide" id="slide1">
+		<div class="container">
+			<div id="logo"></div>
+			<div id="intro_img"></div>
+		</div> <!-- .container -->
+	</div>
+
+<!-- SLIDE 2 -->
+
+	<div class="slide" id="slide2">
+		<div class="container">
+			<h2 id="tagline" style="color: #fff; text-shadow: none;"></h2>
+		</div>
+
+	</div>
+
+<!-- SLIDE 3 -->
+
+	<div class="slide container-fluid" id="slide3">
+    <div class="row section_header">
+				<hr class="col-md-4" />
+				<div class="col-md-4">
+					<h2 id="team_head" class="section_head"></h2>
+				</div>
+				<hr class="col-md-4" />
+    </div> <!-- /row -->
+    <div class="row team-bios">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 id="team_1_name"></h3>
+            <div class="frame">
+              <div id="team_1_photo" class="circular">
+                <div style="display:block;clear:both;height:20px;"></div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading lead" id="team_1_tagline"></div>
+              <div class="panel-body">
+                <span id="team_1_about" class="bio"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 id="team_2_name"></h3>
+            <div class="frame">
+              <div id="team_2_photo" class="circular">
+                <div style="display:block;clear:both;height:20px;"></div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading lead" id="team_2_tagline"></div>
+              <div class="panel-body">
+                <span id="team_2_about" class="bio"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 id="team_3_name"></h3>
+            <div class="frame">
+              <div id="team_3_photo" class="circular">
+                <div style="display:block;clear:both;height:20px;"></div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading lead" id="team_3_tagline"></div>
+              <div class="panel-body">
+                <span id="team_3_about" class="bio"></span>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /nexted row -->
+      </div> <!-- /mid row 8 -->
+      <div class="col-md-2"></div>
+
+    </div><!-- /team bios -->
+		</div>
+	</div>
+
+<!-- SLIDE 4 -->
+
+	<div class="slide container-fluid" id="slide4">
+    <div class="row section_header">
+        <hr class="col-md-4" />
+        <div class="col-md-4">
+          <h2 id="market_head" class="section_head"></h2>
+        </div>
+        <hr class="col-md-4" />
+    </div> <!-- /row -->
+    <div class="row">
+			<div id="problems_solutions"></div>
+    </div>
+
+	</div>
+
+<!-- SLIDE 5 -->
+
+<!-- 	<div class="slide" id="slide5">
+		<div class="container">
+			<div id="customer_acquisition"></div>
+		</div>
+	</div>  -->
+
+<!-- SLIDE 6 -->
+
+	<div class="slide" id="slide5">
+		<div class="container">
+			<div id="product"></div>
+			<a href="http://everest.com/appstore" target="_blank" style="display: block; width: 1000px; height: 100px;">
+				<div id="in_app_screenshots" style="text-align: center; margin-left: 30px; margin-top: -60px;">
+				</div>
+			</a>
+		</div>
+
+	</div>
+
+<!-- SLIDE 7 -->
+
+	<div class="slide" id="slide6">
+		<div class="container">
+			<div id="marketsize"></div>
+		</div>
+	</div>
+
+<!-- SLIDE 8 -->
+
+	<div class="slide" id="slide7">
+
+		<div class="container">
+			<div id="customeradoption"></div>
+		</div>
+
+	</div>
+
+<!-- SLIDE 9 -->
+
+	<div class="slide" id="slide8">
+		<div class="container">
+			<div id="b-plan">
+				<img src="images/brands.png" height="2600" width="900">
+			</div>
+		</div>
+
+	</div>
+
+<!-- SLIDE 9A -->
+
+	<div class="slide" id="slide9">
+		<div class="container">
+			<div id="accomplishments"></div>
+		</div>
+
+	</div>
+
+
+
+<!-- SLIDE 10 -->
+
+	<div class="slide" id="slide10">
+		<div class="container">
+			<div id="the-investment"></div>
+			<div id="contact-francis" style="position: relative; top: 162px;"><a href="mailto:francis@everest.com" target="_blank" title="Get in touch"><img src="images/CTA-3-contact.png"></a></div>
+
+
+
+			<div id="b-plan-fb"><a href="http://www.facebook.com/alumnispaces" target="_blank" title="Like us on Facebook"><img src="images/fb-icon.png"></a></div>
+			<div id="b-plan-twitter"><a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow us on Twitter"><img src="images/twitter-icon.png"></a></div>
+
+
+		</div>
+	</div>
+</body></html>

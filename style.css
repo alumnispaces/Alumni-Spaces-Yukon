@@ -1,0 +1,451 @@
+Investors
+
+/******************************************
+body{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: "proxima-nova", sans-serif;
+	text-align: center;
+	color: #0C1511;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+h1 {
+	font-family: "proxima-nova", sans-serif;
+	font-size: 42px;
+}
+
+*******************************************/
+
+@font-face {
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/******************************************
+TAG DEFINITIONS
+******************************************/
+body {
+	background: #faf8f3 url(images/bg-pattern.png) center top;
+}
+
+h1, h2, h3, h4 {
+	font-family: proxima-nova, sans-serif;
+	color: #000;
+	font-weight: 400;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+h1 {
+	font-size: 47px;
+	text-align: center;
+	height: 59px;
+	line-height: 59px;
+}
+
+a img {border: none; }
+
+hr {
+	background: url('images/hr.png') repeat-x;
+	width: 100%;
+	height: 2px;
+	border: none;
+	margin: 0;
+}
+
+/******************************************
+NAVIGATION
+******************************************/
+#nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+	#nav_left:before, #nav_right:before {
+		display: block;
+		content: '';
+		height: 18px;
+		background: none;
+		border-bottom: none;
+	}
+	#nav_center {
+		width: 958px;
+		height: 18px;
+	}
+		#nav_center a {
+			display: block;
+			float: left;
+			position: relative;
+			width: 47px;
+			height: 22px;
+			background: url(images/social-buttons.png) no-repeat -282px 0;
+			border-top: none;
+			padding: 18px 0 12px;
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+			color: #cac7c1;
+			text-shadow: #fff 0 1px 0;
+			text-decoration: none;
+		}
+		#nav_center a:hover, #nav_center a.current {
+			background-position: -329px 0;
+			color: #615e5a;
+		}
+		#nav_center a#everest {
+			background: url(images/everest-button.png) no-repeat 0 0;
+		}
+		#nav_center a#everest:hover {
+			background-position: -47px 0;
+		}
+		#nav_center a#twitter {
+			background: url(images/social-buttons.png) no-repeat -94px 0;
+		}
+		#nav_center a#twitter:hover {
+			background-position: -141px 0;
+		}
+		#nav_center a#facebook {
+			background: url(images/social-buttons.png) no-repeat 0 0;
+		}
+		#nav_center a#facebook:hover {
+			background-position: -47px 0;
+		}
+		#nav_center a#angellist {
+			background: url(images/social-buttons.png) no-repeat -188px 0;
+		}
+		#nav_center a#angellist:hover {
+			background-position: -235px 0;
+		}
+
+		#nav_center a .label {
+			display: none;
+			position: absolute;
+			width: 77px;
+			left: -15px;
+			top: 53px;
+			color: #595856;
+			text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+			text-align: center;
+			font-size: 11px;
+			line-height: 13px;
+		}
+		#nav_center a.current .label, #nav_center a:hover .label {
+			font-family: proxima-nova, sans-serif;
+			display: block;
+		}
+		#nav_center .filler {
+			height: 56px;
+			width: 23px;
+			background: url(images/nav-filler.png) repeat-x 0 29px;
+			float: left;
+		}
+		#nav_center .filler:before, #filler_left, #filler_right {
+			content: '';
+			display: block;
+			height: 18px;
+			background: none;
+			border-bottom: none;
+		}
+		#filler_left {
+			width: 1px;
+			float: left;
+		}
+		#filler_right {
+			width: 2px;
+			float: left;
+		}
+
+
+
+
+/******************************************
+COMMON CLASSES
+******************************************/
+.slide {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	padding: 110px 0 20px;
+}
+
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.transition {
+	height: 71px;
+	width: 100%;
+	background: url(images/dotted-bg.png) repeat-x 0 93px;
+	text-align: center;
+	padding: 0px 0 0;
+}
+
+	.transition .next {
+		display: inline-block;
+		width: 199px;
+		height: 71px;
+		background: url(images/next-prev-buttons.png) no-repeat 0 0;
+		margin: 0 27px;
+	}
+	.transition .next:hover { background-position: 0 -71px; }
+	.transition .next:active { background-position: 0 -142px; }
+	.transition .start {
+		display: inline-block;
+		width: 199px;
+		height: 71px;
+		background: url(images/start-button.png) no-repeat 0 0;
+		margin: 0 27px;
+	}
+	.transition .start:hover { background-position: 0 -71px; }
+	.transition .start:active { background-position: 0 -142px; }
+	.transition .prev {
+		display: inline-block;
+		width: 199px;
+		height: 71px;
+		background: url(images/next-prev-buttons.png) no-repeat -199px 0;
+		margin: 0 20px;
+	}
+	.transition .prev:hover { background-position: -199px -71px; }
+	.transition .prev:active { background-position: -199px -142px; }
+
+.title {
+	width: 100%;
+	margin: 0 0 65px 0;
+
+}
+
+.title th {
+	background: url(images/dotted-bg.png) repeat-x 0 60px;
+}
+
+h2.section_head{
+	background: #fff;
+	padding: 15px;
+	text-align: center;
+	margin-top: -1em;
+	color: #989898;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	line-height: .6em;
+}
+
+.section_header .col-md-4{
+	padding: 0;
+}
+
+/******************************************
+SLIDE 1
+******************************************/
+#slide1 {
+	padding: 120px 0 350px;
+}
+#logo {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+#slide1 h1 {
+	margin: 27px 0 40px;
+}
+
+#intro_img {
+	width: 960px;
+	height: 654px;
+	margin: 0 auto 20px;
+	background-repeat: no-repeat;
+}
+
+
+
+
+/******************************************
+SLIDE 2  VISION
+******************************************/
+#slide2 {
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+	#slide2 h1 {
+		color: #fff;
+	}
+	#slide2 .title th {
+		background-image: url(images/dotted-bg-blue.png);
+	}
+
+	h2#tagline {
+		font-size: 72px;
+		text-align: center;
+		font-weight: 600;
+		margin: 60px 0 210px;
+		color: #fff;
+	}
+
+	#slide2 .transition {
+		background-image: url(images/dotted-bg-blue.png);
+		margin-bottom: 160px;
+		padding-bottom: 160px;
+	}
+
+
+
+
+/******************************************
+SLIDE 3  TEAM
+******************************************/
+
+.team-bios {
+	text-align: center;
+}
+
+.team-bios h3 {
+	font-weight: bold;
+	color: #1A496E;
+}
+
+.bio ul {
+	list-style-type: none;
+		padding: 0;
+		text-align: left;
+		font-size: 1.1em;
+}
+.bio ul li {
+	margin-bottom: 15px;
+}
+.frame {
+	border-radius: 50%;
+	background-color: #FFF;
+	width: 255px;
+	height: 255px;
+	position: relative;
+	-webkit-box-shadow: 0 0 0px 3px #888;
+	-moz-box-shadow: 0 0 0px 3px #888;
+	box-shadow: 0 0 0px 3px #888;
+	margin: 0 auto 15px;
+}
+.circular {
+	width: 250px;
+	height: 250px;
+	border-radius: 58%;
+	-webkit-border-radius: 58%;
+	-moz-border-radius: 58%;
+	margin: 0 auto;
+	position: absolute;
+	top: 3px;
+	right: 2px;
+	background-repeat: no-repeat;
+}
+
+#team div.advisors
+{
+	width: 100%;
+	display: block;
+	padding-top: 150px;
+
+}
+
+#angelco {
+	position: absolute;
+	width: 256px;
+	height: 78px;
+	left: 358px;
+	top: 3170px;
+}
+
+
+
+/******************************************
+SLIDE 4   OPPORTUNITY
+******************************************/
+#problems_solutions {
+	width: 940px;
+	height: 1400px;
+	background: url(images/problems-solutions.jpg) no-repeat;
+}
+
+/******************************************
+SLIDE 5   PRODUCT
+******************************************/
+#product {
+	width: 960px;
+	height: 930px;
+	background: url(images/problems-solutions.jpg) no-repeat;
+}
+
+/******************************************
+SLIDE 6  MARKET SIZE
+******************************************/
+#marketsize {
+	width: 940px;
+	height: 1900px;
+	background: url(images/users.jpg) no-repeat;
+}
+
+/******************************************
+SLIDE 7 CUSTOMER ADOPTION
+******************************************/
+#customeradoption {
+	width: 940px;
+	height: 1100px;
+	background: url(images/customer-development.jpg) no-repeat;
+}
+
+/******************************************
+SLIDE 8  B-MODEL
+******************************************/
+#b-plan {
+	width: 940px;
+	height: 2600px;
+/*	background: url(images/b-plan.jpg) no-repeat; */
+}
+
+/******************************************
+SLIDE 9  ACCOMPLISHMENTS
+******************************************/
+#accomplishments {
+	width: 940px;
+	height: 1100px;
+	background: url(images/ourjourney.png) no-repeat;
+}
+
+/******************************************
+SLIDE 10  THE INVESTMENT
+******************************************/
+#the-investment {
+	width: 940px;
+	height: 810px;
+	background: url(images/theinvestment.jpg) no-repeat;
+	margin-bottom: -340px;
+}
+
+#b-plan-fb {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	left: 426px;
+	top: 760px;
+}
+
+#b-plan-twitter {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	left: 472px;
+	top: 760px;
+}
