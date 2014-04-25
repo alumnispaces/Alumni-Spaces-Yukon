@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<!-- saved from url=(0023)http://evr.st/investors -->
-<html lang="en" class="wf-proximanova-n4-active wf-proximanova-n6-active wf-ffmetawebpro-i4-active wf-ffmetawebpro-i7-active wf-ffmetawebpro-n4-active wf-ffmetawebpro-n7-active wf-proximanova-n1-active wf-proximanova-n7-active wf-proximanova-n9-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -33,24 +32,28 @@
 		var yukon = {
 				logo:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png',  //top logo 250x250
 				intro_img: 'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/intro_slide.png',
-				tagline: 	'We bring alumni home. Online.', //slide2 foreground text
+				tagline: 	'We bring alumni home. Online.', //slide2 foreground text,
+				contact_email: 'mailto:contact@alumnispaces.com', 
+				facebook:	'https://facebook.com/alumnispaces',
+				twitter:	'https://twitter.com/alumnispaces',
+				contact_text: 'Get in Touch',
 		        team_1:    {
 		              name: "Andrew",
 		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/andrew.jpg", //team photo - 250x250
 		              tagline: "Technology + Product Development",
-		              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
 		        },
 		        team_2:    {
 		              name: "Nick",
 		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/nick.jpg", //team photo - 250x250
 		              tagline: "National Sales/Support + QA Testing",
-		              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
 		        },
 		        team_3:    {
 		              name: "Rachel",
 		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/rachel.jpg", //team photo - 250x250
 		              tagline: "Group Sales/Support + Market",
-		              about: "<ul><li>Self-taught PHP developer with 6 years of hacking.</li><li>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
+		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
 		        },
 				slides: 	{
 						slide_2:	{
@@ -101,8 +104,40 @@
 							tagline:	'How are we going to get that cheddar?',
 							box1:	'<h4>Brands</h4><p>Our brand partners will promote their challenges on Facebook, twitter and other media channels.</p><hr /><h5 class="light">Current Clients</h5><br /><img class="img-responsive" style="margin: 0 auto;" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/local_logos.png" />',
 							box2:	'<h4>Heros</h4>World class athletes, teams and thought leaders will engage with fans, expand their following via Everest. Instead of jsut communicating whats on their mind, heros will share the daily steps and moments fueling their performance.'
+						},
+						slide_8: {
+							head:	'Where We\'ve Been',
+							tagline: 'Here is what we have accomplished so far:',
+						},
+						slide_9: {
+							head: 'Investment',
+							tagline: 'Seeking the best investors on the planet.',
+							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/investors.jpg'
 						}
-				}
+				},
+				timeline: [
+					{
+						date:	'Jan 2012',
+						title:	'Relocated to SF',
+						desc:	'Now located in the beautiful Presidio',
+						icon:	'plane',
+						icon_color: '#0099ff'
+					},
+					{
+						date: 'Mar-Sept 2012',
+						title: 'Built an amazing team',
+						desc:	'Strong team culture that is constantly striving to be even better',
+						icon:	'fire',
+						icon_color: '#f17902'
+					},
+					{
+						date: 'Dec 2012',
+						title: 'Built a great product with successful launch',
+						desc:	'Well received by users, press and reviews with a 4.5 star average review',
+						icon:	'send',
+						icon_color: '#33cccc'
+					}
+				]
 		};
 
 		function apply_bg(id,img){
@@ -114,7 +149,7 @@
       words = words || yukon[id];
       $('#'+id).html(words);
 		}
-
+		
 		//Intro
 		apply_bg('logo');
 		apply_bg('intro_img');
@@ -157,6 +192,15 @@
 		apply_text('slide_7_box1',yukon.slides.slide_7.box1);
 		apply_text('slide_7_box2',yukon.slides.slide_7.box2);
 		
+		//Slide 8
+		apply_text('slide_8_head',yukon.slides.slide_8.head);
+		apply_text('slide_8_tagline',yukon.slides.slide_8.tagline);
+		
+		//Slide 9
+		apply_text('slide_9_head',yukon.slides.slide_9.head);
+		apply_text('slide_9_tagline',yukon.slides.slide_9.tagline);
+		apply_bg('slide_9_body',yukon.slides.slide_9.bg);
+				
 		//Team
 		apply_bg('team_1_photo',yukon.team_1.photo);
 		apply_bg('team_2_photo',yukon.team_2.photo);
@@ -164,7 +208,44 @@
 		apply_text('team_1_name',yukon.team_1.name); apply_text('team_1_tagline',yukon.team_1.tagline); apply_text('team_1_about',yukon.team_1.about);
 		apply_text('team_2_name',yukon.team_2.name); apply_text('team_2_tagline',yukon.team_2.tagline); apply_text('team_2_about',yukon.team_2.about);
 		apply_text('team_3_name',yukon.team_3.name); apply_text('team_3_tagline',yukon.team_3.tagline); apply_text('team_3_about',yukon.team_3.about);
-	});
+		
+		//Contact
+		$('#contact_email').attr('href',yukon.contact_email);
+		apply_text('contact_text'); 
+		
+		//setup the timeline on slide 9
+		var index;
+		for (index = 0; index < yukon.timeline.length; ++index) {
+			//iterate through the timeline
+			$('#timeline').append('\
+				<div class="row event">\
+					<div class="box row">\
+						<div class="col-md-2">\
+							<span style="color:'+yukon.timeline[index].icon_color+'" class="glyphicon glyphicon-'+yukon.timeline[index].icon+'"></span>\
+						</div>\
+						<div class="col-md-10">\
+							<div class="row">\
+								<div class="col-md-12 light align-right">\
+									'+yukon.timeline[index].date+'\
+								</div>\
+							</div><!-- /row -->\
+							<div class="row">\
+								<div class="col-md-12">\
+									<h4>'+yukon.timeline[index].title+'</h4>\
+								</div>\
+							</div>\
+							'+yukon.timeline[index].desc+'\
+						</div>\
+					</div><!-- /box -->\
+					<div class="dashed vert col-md-offset-6"></div>\
+				</div><!-- /event -->\
+			')
+		}
+		$('#timeline .vert').last().remove(); //hide last dotted descender
+		
+	}); //end yukon function
+	
+	
 	$(function() {
   	if(navigator.userAgent.match(/iPhone/i)){
       $("#nav_center").hide();
@@ -458,29 +539,72 @@
 </div><!-- /slide -->
 
 <!-- SLIDE 8 -->
-
-	<div class="slide" id="slide8">
-		<div class="container">
-			<div id="accomplishments"></div>
+<div class="slide container-fluid" id="slide8">
+	<div class="row section_header">
+	    <hr class="col-md-4" />
+	    <div class="col-md-4">
+	      <h2 id="slide_8_head" class="section_head"></h2>
+	    </div>
+	    <hr class="col-md-4" />
+	</div> <!-- /row -->
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h3 id="slide_8_tagline" class="slide_tagline"></h3>
+			<div class="dashed vert col-md-offset-6" style="margin-top: -2em;"></div>
+			<div id="slide_8_body">
+			</div><!--/5 body -->
 		</div>
-
+	</div><!-- /row -->
+	<div class="row">
+		<div id="timeline" class="col-md-6 col-md-offset-3">
+		</div><!--/timeline -->
 	</div>
 
+</div><!-- /slide -->
 
 
-<!-- SLIDE 10 -->
+<!-- SLIDE 9 -->
 
-	<div class="slide" id="slide10">
-		<div class="container">
-			<div id="the-investment"></div>
-			<div id="contact-francis" style="position: relative; top: 162px;"><a href="mailto:francis@everest.com" target="_blank" title="Get in touch"><img src="images/CTA-3-contact.png"></a></div>
+<div class="slide container-fluid" id="slide9">
+    <div class="row section_header">
+        <hr class="col-md-4" />
+        <div class="col-md-4">
+          <h2 id="slide_9_head" class="section_head"></h2>
+        </div>
+        <hr class="col-md-4" />
+    </div> <!-- /row -->
+    <div class="row">
+			<div id="slide_9_body" class="col-md-8 col-md-offset-2">
+				<h3 id="slide_9_tagline" class="slide_tagline"></h3>
+			</div>
+			<div class="col-md-2"></div>
+    </div> <!-- /row -->
 
+</div><!-- /slide -->
 
-
-			<div id="b-plan-fb"><a href="http://www.facebook.com/alumnispaces" target="_blank" title="Like us on Facebook"><img src="images/fb-icon.png"></a></div>
-			<div id="b-plan-twitter"><a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow us on Twitter"><img src="images/twitter-icon.png"></a></div>
-
-
-		</div>
-	</div>
+<!-- /FIN -->
+<div class="slide container-fluid" id="fin">
+	<div class="row section_header">
+        <hr class="col-md-4" />
+        <div class="col-md-4 contact">
+        	<a class="row contact_badge pull-left" href="" id="contact_email">
+        		<div class="col-md-10 contact_left">
+        			<span id="contact_text"></span>
+        		</div>
+        		<div class="col-md-2 email_badge">
+        			<span class="glyphicon glyphicon-envelope"></span>
+        		</div>
+        	</a>
+        </div>
+        <hr class="col-md-4" />
+    </div> <!-- /row -->
+    <div class="row text-muted" style="margin-top: 4em;">
+    	<div class="col-md-1">
+    		&copy; This year.
+    	</div>
+    	<div class="col-md-4 col-md-offset-7">
+    		Inspired by <a href="http://evr.st/investors" target="_blank">Everest</a>, rebuilt with <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a><!-- by <a href="https://twitter.com/acafourek" target="_blank">@acafourek</a> -->.
+    	</div>
+    </div>
+</div><!-- /fin fin -->
 </body></html>

@@ -274,6 +274,19 @@ text-shadow: 0px 2px 3px #ccc;
 .teal {
 	color: #39c7c8;
 }
+
+.vert {
+	margin-top: -1em;
+	height: 5em;
+}
+
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+
 /******************************************
 SLIDE 1
 ******************************************/
@@ -346,6 +359,7 @@ SLIDE 3  TEAM
 	color: #1A496E;
 }
 
+/*
 .bio ul {
 	list-style-type: none;
 		padding: 0;
@@ -355,6 +369,7 @@ SLIDE 3  TEAM
 .bio ul li {
 	margin-bottom: 15px;
 }
+*/
 .frame {
 	border-radius: 50%;
 	background-color: #FFF;
@@ -477,11 +492,6 @@ SLIDE 6  MARKET SIZE
 	margin-top: 2em;
 }
 
-#slide6 .vert {
-	margin-top: -1em;
-	height: 5em;
-}
-
 #slide_6_bottomhead {
 	line-height: 1em;
 	font-size: inherit;
@@ -511,6 +521,24 @@ SLIDE 7 CUSTOMER ADOPTION
 /******************************************
 SLIDE 8  B-MODEL
 ******************************************/
+#slide8 .vert {
+	height: 2em;
+}
+
+#timeline .box {
+	-moz-box-shadow:  2px 2px 2px 0px #CCC;
+	-webkit-box-shadow: 2px 2px 2px 0px #CCC;
+	box-shadow: 2px 2px 2px 0px #CCC;
+	text-align: left;
+	margin-top: 0;
+}
+#timeline .box h4 {
+	margin: 0 0 .15em 0;
+}
+#timeline .box .glyphicon {
+	margin-top: 20%;
+}
+
 #b-plan {
 	width: 940px;
 	height: 2600px;
@@ -520,11 +548,14 @@ SLIDE 8  B-MODEL
 /******************************************
 SLIDE 9  ACCOMPLISHMENTS
 ******************************************/
-#accomplishments {
-	width: 940px;
-	height: 1100px;
-	background: url(images/ourjourney.png) no-repeat;
+#slide_9_body {
+	background-repeat: no-repeat;
+	height: 500px;
 }
+h3#slide_9_tagline {
+	margin-top: 20%;	
+}
+
 
 /******************************************
 SLIDE 10  THE INVESTMENT
@@ -550,4 +581,40 @@ SLIDE 10  THE INVESTMENT
 	height: 36px;
 	left: 472px;
 	top: 760px;
+}
+
+a.contact_badge {
+	width: 100%;
+	text-align: center;
+	border: 2px #FFF groove;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	text-align: center;
+	margin: -2.5em 0 0 0;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	line-height: .6em;
+	color: #000;
+}
+a.contact_badge:hover {
+	color: #39c7c8;
+}
+.contact_left {
+	padding: 2em 0;
+}
+.email_badge {
+	border-left: 2px #FFF groove;
+	height: 4.5em;
+	padding: 2em 0;
+}
+.email_badge .glyphicon {
+	margin-top: -.3em;
+	color: #39c7c8;
+}
+
+.social {
+	margin-top: 2em;
 }
