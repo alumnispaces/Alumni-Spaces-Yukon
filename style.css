@@ -64,6 +64,7 @@ NAVIGATION
 	top: 0;
 	left: 0;
 	z-index: 10;
+	background: #faf8f3 url(images/bg-pattern.png) center top;
 }
 	#nav_left:before, #nav_right:before {
 		display: block;
@@ -96,10 +97,10 @@ NAVIGATION
 			background-position: -329px 0;
 			color: #615e5a;
 		}
-		#nav_center a#everest {
-			background: url(images/everest-button.png) no-repeat 0 0;
+		#nav_center a#homelink {
+			background: url(images/as-button.png) no-repeat 0 0;
 		}
-		#nav_center a#everest:hover {
+		#nav_center a#ehomelink:hover {
 			background-position: -47px 0;
 		}
 		#nav_center a#twitter {
@@ -114,7 +115,7 @@ NAVIGATION
 		#nav_center a#facebook:hover {
 			background-position: -47px 0;
 		}
-		#nav_center a#angellist {
+		#nav_center a#nav-email {
 			background: url(images/social-buttons.png) no-repeat -188px 0;
 		}
 		#nav_center a#angellist:hover {
@@ -294,10 +295,9 @@ SLIDE 1
 	padding: 120px 0 350px;
 }
 #logo {
-	width: 250px;
-	height: 250px;
-	margin: 0 auto;
 	background-repeat: no-repeat;
+	min-height: 250px;
+	min-width: 250px;
 }
 
 #slide1 h1 {
@@ -305,9 +305,8 @@ SLIDE 1
 }
 
 #intro_img {
-	width: 960px;
 	height: 654px;
-	margin: 0 auto 20px;
+	margin-top: 2em;
 	background-repeat: no-repeat;
 }
 
@@ -373,8 +372,8 @@ SLIDE 3  TEAM
 .frame {
 	border-radius: 50%;
 	background-color: #FFF;
-	width: 255px;
-	height: 255px;
+	width: 205px;
+	height: 205px;
 	position: relative;
 	-webkit-box-shadow: 0 0 0px 3px #888;
 	-moz-box-shadow: 0 0 0px 3px #888;
@@ -382,8 +381,8 @@ SLIDE 3  TEAM
 	margin: 0 auto 15px;
 }
 .circular {
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	border-radius: 58%;
 	-webkit-border-radius: 58%;
 	-moz-border-radius: 58%;
@@ -554,6 +553,11 @@ SLIDE 9  ACCOMPLISHMENTS
 }
 h3#slide_9_tagline {
 	margin-top: 20%;	
+}
+
+.dollas {
+	text-align: center;
+	margin-top: 3em;
 }
 
 

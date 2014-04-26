@@ -30,7 +30,8 @@
   <script type="text/javascript">
 	$(document).ready(function() {
 		var yukon = {
-				logo:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png',  //top logo 250x250
+				homelink:	'http://alumnispaces.com',
+				logo:		'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png',  //top logo 250x250
 				intro_img: 'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/intro_slide.png',
 				tagline: 	'We bring alumni home. Online.', //slide2 foreground text,
 				contact_email: 'mailto:contact@alumnispaces.com', 
@@ -39,19 +40,19 @@
 				contact_text: 'Get in Touch',
 		        team_1:    {
 		              name: "Andrew",
-		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/andrew.jpg", //team photo - 250x250
+		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/andrew.jpg", //team photo - 250x250
 		              tagline: "Technology + Product Development",
 		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
 		        },
 		        team_2:    {
 		              name: "Nick",
-		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/nick.jpg", //team photo - 250x250
+		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/nick.jpg", //team photo - 250x250
 		              tagline: "National Sales/Support + QA Testing",
 		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
 		        },
 		        team_3:    {
 		              name: "Rachel",
-		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/team/rachel.jpg", //team photo - 250x250
+		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/rachel.jpg", //team photo - 250x250
 		              tagline: "Group Sales/Support + Market",
 		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
 		        },
@@ -112,7 +113,10 @@
 						slide_9: {
 							head: 'Investment',
 							tagline: 'Seeking the best investors on the planet.',
-							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/investors.jpg'
+							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/investors_bg.jpg',
+							midhead: 	'<span class="light">Currently raising up to</span><h4 class="impact_number">$250,000</h4>',
+							bottomhead: 'To empower us to',
+							box:		'<h4><span class="glyphicon glyphicon-magnet"></span><br />Hire</h4><p>With the right designer and developer on the team, we will greatly speed up our innovation.</p><br /><h4><span class="glyphicon glyphicon-usd"><br />Sell</h4><p>Conference exhibits cost about as much as tuition it seems but that is where we need to go to get the word out.</p><br /><h4><span class="glyphicon glyphicon-road"></span><br />Focus</h4><p>With a funding runway, we can devote 100% of our attention on the long-term takeoff.</p>'
 						}
 				},
 				timeline: [
@@ -151,6 +155,7 @@
 		}
 		
 		//Intro
+		$('#homelink').attr('href',yukon.homelink);
 		apply_bg('logo');
 		apply_bg('intro_img');
 		apply_text('tagline');
@@ -200,6 +205,9 @@
 		apply_text('slide_9_head',yukon.slides.slide_9.head);
 		apply_text('slide_9_tagline',yukon.slides.slide_9.tagline);
 		apply_bg('slide_9_body',yukon.slides.slide_9.bg);
+		apply_text('slide_9_midhead',yukon.slides.slide_9.midhead);
+		apply_text('slide_9_bottomhead',yukon.slides.slide_9.bottomhead);
+		apply_text('slide_9_box',yukon.slides.slide_9.box);
 				
 		//Team
 		apply_bg('team_1_photo',yukon.team_1.photo);
@@ -284,7 +292,7 @@
 		<td id="nav_left"><img src="images/empty.gif"></td>
 		<td id="nav_center">
 			<div id="filler_left"></div>
-			<a href="#/" target="_blank" title="Back" id="everest" style="height: 50px;"><div class="label">Back</div></a>
+			<a href="" target="_blank" title="Back" id="homelink" style="height: 50px;"><div class="label">Back</div></a>
 			<div class="filler"></div>
 			<a href="#slide1" class="nav current" title="Introduction">1<div class="label">Introduction</div></a>
 			<div class="filler"></div>
@@ -310,7 +318,7 @@
 			<div class="filler"></div>
 			<a href="http://www.facebook.com/alumnispaces" target="_blank" title="Find Us on Facebook" id="facebook" style="height: 50px;"><div class="label">Find Us on Facebook</div></a>
 			<div class="filler"></div>
-			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us" id="angellist" style="height: 50px;"><div class="label">Email Us</div></a>
+			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us" id="nav-email" style="height: 50px;"><div class="label">Email Us</div></a>
 			<div id="filler_right"></div>
 		</td>
 		<td id="nav_left"><img src="images/empty.gif"></td>
@@ -318,20 +326,22 @@
 
 <!-- SLIDE 1 -->
 
-	<div class="slide" id="slide1">
-		<div class="container">
-			<div id="logo"></div>
-			<div id="intro_img"></div>
-		</div> <!-- .container -->
+	<div class="slide container-fluid" id="slide1">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				 <div id="logo">
+				 </div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="intro_img" class="col-md-8 col-md-offset-2"></div>
+		</div>
 	</div>
 
 <!-- SLIDE 2 -->
 
-	<div class="slide" id="slide2">
-		<div class="container">
+	<div class="slide container-fluid" id="slide2">
 			<h2 id="tagline" style="color: #fff; text-shadow: none;"></h2>
-		</div>
-
 	</div>
 
 <!-- SLIDE 3 -->
@@ -579,7 +589,24 @@
 			</div>
 			<div class="col-md-2"></div>
     </div> <!-- /row -->
-
+     <div class="row">
+		<div class="col-md-4 col-md-offset-4 dollas">
+			<div id="slide_9_midhead"></div>
+			<div class="dashed vert col-md-offset-6"></div>
+		</div>
+		<div class="row section_header">
+	        <div class="col-md-2 col-md-offset-5">
+	          <div id="slide_9_bottomhead" class="section_head light teal" style="font-size: inherit;"></div>
+					<div class="arrow-down arrow-teal"></div>
+	        </div>
+		</div> <!-- /row section header-->
+    </div> <!-- /row -->
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+    		<div class="box" id="slide_9_box">
+    		</div>
+    	</div>
+	</div>
 </div><!-- /slide -->
 
 <!-- /FIN -->
