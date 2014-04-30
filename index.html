@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title> Yukon Gold </title>
+	<title>Alumni Spaces Investor Tour</title>
 
 	<meta name="description" content="Everest - Live your dreams.">
 	<meta name="author" content="Francis Pedraza, Victor Mathieux, Juan C. Mendez">
@@ -29,231 +29,95 @@
 
   <script type="text/javascript">
 	$(document).ready(function() {
-		var yukon = {
-				homelink:	'http://alumnispaces.com',
-				logo:		'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png',  //top logo 250x250
-				intro_img: 'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/intro_slide.png',
-				tagline: 	'We bring alumni home. Online.', //slide2 foreground text,
-				contact_email: 'mailto:contact@alumnispaces.com', 
-				facebook:	'https://facebook.com/alumnispaces',
-				twitter:	'https://twitter.com/alumnispaces',
-				contact_text: 'Get in Touch',
-		        team_1:    {
-		              name: "Andrew",
-		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/andrew.jpg", //team photo - 250x250
-		              tagline: "Technology + Product Development",
-		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
-		        },
-		        team_2:    {
-		              name: "Nick",
-		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/nick.jpg", //team photo - 250x250
-		              tagline: "National Sales/Support + QA Testing",
-		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
-		        },
-		        team_3:    {
-		              name: "Rachel",
-		              photo: "http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/rachel.jpg", //team photo - 250x250
-		              tagline: "Group Sales/Support + Market",
-		              about: "<ul class='list-group'><li class='list-group-item'>Self-taught PHP developer with 6 years of hacking.</li><li class='list-group-item'>Former Product/Project Manager at Ripple6, a white label social network platform for publishing companies acquired by Gannett in 2009</li><li class='list-group-item'>1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class='list-group-item'>Avid traveller with commits from 17 countries in 3 years.</li></ul>"
-		        },
-				slides: 	{
-						slide_2:	{
-							head: 	'Our Team',
-							bg:     'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/slide2.jpg', //slide2 parallax background image 1600x1044
-						},
-						slide_4:	{
-							head:	'The Opportunity',
-							bg:		'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/slide_4bg.png',
-							tagline: 'Every person on the planet has dreams, aspirations and goals. Most are stifled by the gap between dreams and reality.',
-							midhead: 'Problem',
-							bottomhead: 'Solution',
-							bottombox: 'Provide people with the <strong>tools</strong> and <strong>community</strong> they need to make their dreams a reality.',
-							boxes:   {
-								box_1: {
-									header: 'Organization',
-									glyph:	'tower',
-									text:	'Most people do not write down their dreams, much less have a process for taking the next step , or fitting it into their busy schedule'
-								},
-								box_2: {
-									header: 'Support',
-									glyph: 	'globe',
-									text:	'Most people do not share their dreams, so they do not receive suggestions, help, encouragement, accountability or companionship'
-								},
-								box_3:	{
-									header:	'Inspiration',
-									glyph:	'fire',
-									text:	'Most people give up on their dreams too easily; they hit obstacles, gradually get discouraged and lost motivaton because they struggle.'
-								}
-							}
-						},
-						slide_5:	{
-							head: 		'Product',
-							tagline: 	'Our product is Awesomesauce',
-							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/alumni_spaces_product.jpg'
-						},
-						slide_6:	{
-							head:		'Market Size',
-							box_text: 	'<span class="light">Current focus:</span><br /><h3 class="slide_tagline">Alumni Associations</h3>We are currently focused on partnering with NCAA D1-level universities in the United States.',
-							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/alumni_spaces_product.jpg',
-							tagline: 	'<span class="light">2012 Donations to Education</span><h4 class="impact_number">$31 Billion</h4>',
-							bottomhead: '2 Sources of Revenue',
-							box1:		'<h4>Local Groups</h4><p>Independent local groups who need a good-looking website and a centralized outbound communications hub.</p><hr /><h4 class="impact_number"><span class="teal">$200</span> Annually',
-							box2:		'<h4>Organizations</h4><p>With groups spread out around the globe, they may have 100+ local groups who can use Alumni Spaces to power their sites. In addition, the Organization gains tools which grant them previously unavailabile insight into the overall operation and health of their member groups.</p><hr /><h4 class="impact_number"><span class="teal">$8,000</span> Setup<span class="light" style="font-size: .25em; margin-left: 5px;">(one time)</span><br /><span style="width: 100%; text-align: center; float: left;">+</span><br /><span class="teal">$15,000</span> Annually'
-						},
-						slide_7: {
-							head:	'Customer Acquisition',
-							tagline:	'How are we going to get that cheddar?',
-							box1:	'<h4>Brands</h4><p>Our brand partners will promote their challenges on Facebook, twitter and other media channels.</p><hr /><h5 class="light">Current Clients</h5><br /><img class="img-responsive" style="margin: 0 auto;" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/local_logos.png" />',
-							box2:	'<h4>Heros</h4>World class athletes, teams and thought leaders will engage with fans, expand their following via Everest. Instead of jsut communicating whats on their mind, heros will share the daily steps and moments fueling their performance.'
-						},
-						slide_8: {
-							head:	'Where We\'ve Been',
-							tagline: 'Here is what we have accomplished so far:',
-						},
-						slide_9: {
-							head: 'Investment',
-							tagline: 'Seeking the best investors on the planet.',
-							bg:			'http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/investors_bg.jpg',
-							midhead: 	'<span class="light">Currently raising up to</span><h4 class="impact_number">$250,000</h4>',
-							bottomhead: 'To empower us to',
-							box:		'<h4><span class="glyphicon glyphicon-magnet"></span><br />Hire</h4><p>With the right designer and developer on the team, we will greatly speed up our innovation.</p><br /><h4><span class="glyphicon glyphicon-usd"><br />Sell</h4><p>Conference exhibits cost about as much as tuition it seems but that is where we need to go to get the word out.</p><br /><h4><span class="glyphicon glyphicon-road"></span><br />Focus</h4><p>With a funding runway, we can devote 100% of our attention on the long-term takeoff.</p>'
-						}
-				},
-				timeline: [
+		var timeline = [
 					{
-						date:	'Jan 2012',
-						title:	'Relocated to SF',
-						desc:	'Now located in the beautiful Presidio',
-						icon:	'plane',
+						date:	'Early 2009',
+						title:	'Started MyAlumniBar.com',
+						desc:	'Want to watch a game with fellow fans? We’ll tell you all the local spots...as long as we can get all the right data from local chapters...that\'ll be easy, right?',
+						icon:	'send',
 						icon_color: '#0099ff'
 					},
 					{
-						date: 'Mar-Sept 2012',
-						title: 'Built an amazing team',
-						desc:	'Strong team culture that is constantly striving to be even better',
+						date: 'October 2009',
+						title: 'Jack Dorsey replied to our email.',
+						desc:	'Yes, <a href="https://twitter.com/jack" target="_blank">@Jack</a>. We were very excited.',
 						icon:	'fire',
 						icon_color: '#f17902'
 					},
 					{
-						date: 'Dec 2012',
-						title: 'Built a great product with successful launch',
-						desc:	'Well received by users, press and reviews with a 4.5 star average review',
-						icon:	'send',
-						icon_color: '#33cccc'
+						date: 'Fall 2011',
+						title: 'Pivot',
+						desc:	'Found that MyAlumniBar depended on too much user input and consistent local alumni information was hard to find. But we knew we were on to something...',
+						icon:	'random',
+						icon_color: '#001F3F'
+					},
+					{
+						date: 'Spring 2012',
+						title: 'Launched beta of Alumni Spaces',
+						desc:	'Volunteering for our local chapters gave us a new perspective and with a few local chapters from various univeristies asking for new websites, we created the first version of Enemble, our platform for local groups.',
+						icon:	'plane',
+						icon_color: '#FF4136'
+					},
+					{
+						date: 'November 2011',
+						title: 'Ensemble gets some traction',
+						desc:	'Local groups from Michigan State, Ohio State, Florida and others begin using Alumni Spaces.',
+						icon:	'bullhorn',
+						icon_color: '#3D9970'
+					},
+					{
+						date: 'September 2013',
+						title: 'First Symphony network launches with the University of Missouri',
+						desc:	'After 10 months of collaboration and development, Symphony got its debut as we launched over 100 group sites and a new reporting suite.',
+						icon:	'dashboard',
+						icon_color: '#F1B82D'
+					},
+					{
+						date: 'October 2013',
+						title: 'Selected as ALPHA Startup for the Web Summit conference in Dublin',
+						desc:	'Described as "<i>A who’s who of the world’s most innovative companies</i>," ALPHA gave us the chance to get an international perspective on higher education and meet potential new partners.',
+						icon:	'certificate',
+						icon_color: '#0093bd'
+					},
+					{
+						date: '2014',
+						title: 'Next Up...',
+						desc:	'CRM tools, donation processing, new Symphony networks and more.',
+						icon:	'flash',
+						icon_color: '#85144B'
 					}
-				]
-		};
-
-		function apply_bg(id,img){
-      img = img || yukon[id]; //you can specify an image in the object, or just fall back to the id
-			$('#'+id).css('background-image','url('+img+')');
-		}
-
-		function apply_text(id,words){
-      words = words || yukon[id];
-      $('#'+id).html(words);
-		}
-		
-		//Intro
-		$('#homelink').attr('href',yukon.homelink);
-		apply_bg('logo');
-		apply_bg('intro_img');
-		apply_text('tagline');
-
-		//Slide2
-		apply_bg('slide2',yukon.slides.slide_2.bg);
-		apply_text('slide_2_head',yukon.slides.slide_2.head);
-		
-		//slide 4
-		apply_bg('slide_4_body',yukon.slides.slide_4.bg);
-		apply_text('slide_4_head',yukon.slides.slide_4.head);
-		apply_text('slide_4_tagline',yukon.slides.slide_4.tagline);
-		apply_text('slide_4_midhead',yukon.slides.slide_4.midhead);
-		apply_text('box1_head',yukon.slides.slide_4.boxes.box_1.header);
-		apply_text('box1_text',yukon.slides.slide_4.boxes.box_1.text);
-		apply_text('box2_head',yukon.slides.slide_4.boxes.box_2.header);
-		apply_text('box2_text',yukon.slides.slide_4.boxes.box_2.text);
-		apply_text('box3_head',yukon.slides.slide_4.boxes.box_3.header);
-		apply_text('box3_text',yukon.slides.slide_4.boxes.box_3.text);
-		apply_text('slide_4_bottomhead',yukon.slides.slide_4.bottomhead);
-		apply_text('bottom_box',yukon.slides.slide_4.bottombox);
-		
-		//Slide 5
-		apply_text('slide_5_head',yukon.slides.slide_5.head);
-		apply_text('slide_5_tagline',yukon.slides.slide_5.tagline);
-		apply_bg('slide_5_body',yukon.slides.slide_5.bg);
-		
-		//Slide6
-		apply_text('slide_6_head',yukon.slides.slide_6.head);
-		apply_text('slide_6_box',yukon.slides.slide_6.box_text);
-		apply_text('slide_6_tagline',yukon.slides.slide_6.tagline);
-		apply_text('slide_6_bottomhead',yukon.slides.slide_6.bottomhead);
-		apply_text('slide_6_box1',yukon.slides.slide_6.box1);
-		apply_text('slide_6_box2',yukon.slides.slide_6.box2);
-		
-		//Slide 7
-		apply_text('slide_7_head',yukon.slides.slide_7.head);
-		apply_text('slide_7_tagline',yukon.slides.slide_7.tagline);
-		apply_text('slide_7_box1',yukon.slides.slide_7.box1);
-		apply_text('slide_7_box2',yukon.slides.slide_7.box2);
-		
-		//Slide 8
-		apply_text('slide_8_head',yukon.slides.slide_8.head);
-		apply_text('slide_8_tagline',yukon.slides.slide_8.tagline);
-		
-		//Slide 9
-		apply_text('slide_9_head',yukon.slides.slide_9.head);
-		apply_text('slide_9_tagline',yukon.slides.slide_9.tagline);
-		apply_bg('slide_9_body',yukon.slides.slide_9.bg);
-		apply_text('slide_9_midhead',yukon.slides.slide_9.midhead);
-		apply_text('slide_9_bottomhead',yukon.slides.slide_9.bottomhead);
-		apply_text('slide_9_box',yukon.slides.slide_9.box);
+				];
 				
-		//Team
-		apply_bg('team_1_photo',yukon.team_1.photo);
-		apply_bg('team_2_photo',yukon.team_2.photo);
-		apply_bg('team_3_photo',yukon.team_3.photo);
-		apply_text('team_1_name',yukon.team_1.name); apply_text('team_1_tagline',yukon.team_1.tagline); apply_text('team_1_about',yukon.team_1.about);
-		apply_text('team_2_name',yukon.team_2.name); apply_text('team_2_tagline',yukon.team_2.tagline); apply_text('team_2_about',yukon.team_2.about);
-		apply_text('team_3_name',yukon.team_3.name); apply_text('team_3_tagline',yukon.team_3.tagline); apply_text('team_3_about',yukon.team_3.about);
-		
-		//Contact
-		$('#contact_email').attr('href',yukon.contact_email);
-		apply_text('contact_text'); 
-		
-		//setup the timeline on slide 9
 		var index;
-		for (index = 0; index < yukon.timeline.length; ++index) {
+		for (index = 0; index < timeline.length; ++index) {
 			//iterate through the timeline
 			$('#timeline').append('\
 				<div class="row event">\
 					<div class="box row">\
 						<div class="col-md-2">\
-							<span style="color:'+yukon.timeline[index].icon_color+'" class="glyphicon glyphicon-'+yukon.timeline[index].icon+'"></span>\
+							<span style="color:'+timeline[index].icon_color+'" class="glyphicon glyphicon-'+timeline[index].icon+'"></span>\
 						</div>\
 						<div class="col-md-10">\
 							<div class="row">\
 								<div class="col-md-12 light align-right">\
-									'+yukon.timeline[index].date+'\
+									'+timeline[index].date+'\
 								</div>\
 							</div><!-- /row -->\
 							<div class="row">\
 								<div class="col-md-12">\
-									<h4>'+yukon.timeline[index].title+'</h4>\
+									<h4>'+timeline[index].title+'</h4>\
 								</div>\
 							</div>\
-							'+yukon.timeline[index].desc+'\
+							'+timeline[index].desc+'\
 						</div>\
 					</div><!-- /box -->\
 					<div class="dashed vert col-md-offset-6"></div>\
 				</div><!-- /event -->\
-			')
-		}
+			');
+		} //end index func
 		$('#timeline .vert').last().remove(); //hide last dotted descender
+	});
 		
-	}); //end yukon function
-	
-	
 	$(function() {
   	if(navigator.userAgent.match(/iPhone/i)){
       $("#nav_center").hide();
@@ -286,39 +150,51 @@
     })();
   </script>
 
-<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
+<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43446646-2', 'alumnispaces.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
 <body>
 	<table id="nav"><tbody><tr>
 		<td id="nav_left"><img src="images/empty.gif"></td>
 		<td id="nav_center">
 			<div id="filler_left"></div>
-			<a href="" target="_blank" title="Back" id="homelink" style="height: 50px;"><div class="label">Back</div></a>
+			<a href="http://alumnispaces.com" target="_blank" title="Back" id="homelink" style="height: 50px;"><div class="label">Back</div><div class="label">Back</div></a>
 			<div class="filler"></div>
-			<a href="#slide1" class="nav current" title="Introduction">1<div class="label">Introduction</div></a>
+			<a href="#slide1" class="nav" title="Introduction">1<div class="label">Introduction</div><div class="label">Introduction</div></a>
 			<div class="filler"></div>
-			<a href="#slide2" class="nav" title="Our Vision">2<div class="label">Our Vision</div></a>
+			<a href="#slide2" class="nav" title="Vision">2<div class="label">Vision</div><div class="label">Vision</div></a>
 			<div class="filler"></div>
-			<a href="#slide3" class="nav" title="Team">3<div class="label">Team</div></a>
+			<a href="#slide3" class="nav" title="Team">3<div class="label">Team</div><div class="label">Team</div></a>
 			<div class="filler"></div>
-			<a href="#slide4" class="nav" title="The Opportunity">4<div class="label">The Opportunity</div></a>
+			<a href="#slide4" class="nav" title="Opportunity">4<div class="label">Opportunity</div><div class="label">Opportunity</div></a>
 			<div class="filler"></div>
-			<a href="#slide5" class="nav" title="Product">5<div class="label">Product</div></a>
+			<a href="#slide5" class="nav" title="Product">5<div class="label">Product</div><div class="label">Product</div></a>
 			<div class="filler"></div>
-			<a href="#slide6" class="nav" title="Market Size">6<div class="label">Market Size</div></a>
+			<a href="#slide6" class="nav" title="Market and Revenue">6<div class="label">Market and Revenue</div><div class="label">Market and Revenue</div></a>
 			<div class="filler"></div>
-			<a href="#slide7" class="nav" title="User Acquisition">7<div class="label">User Acquisition</div></a>
+			<a href="#slide7" class="nav" title="Customer Acquisition">7<div class="label">Customer Acquisition</div><div class="label">Customer Acquisition</div></a>
 			<div class="filler"></div>
-			<a href="#slide8" class="nav" title="Business Model">8<div class="label">Business Model</div></a>
+			<a href="#slide8" class="nav" title="Where We've Been">8<div class="label">Where We've Been</div><div class="label">Where We've Been</div></a>
 			<div class="filler"></div>
-			<a href="#slide9" class="nav" title="Accomplishments">9<div class="label">Accomplishments</div></a>
+			<a href="#slide9" class="nav" title="Investment">9<div class="label">Investment</div><div class="label">Investment</div></a>
 			<div class="filler"></div>
-			<a href="#slide10" class="nav" title="Next Steps">10<div class="label">Next Steps</div></a>
+			<a href="#slide10" class="nav" title="Contact">10<div class="label">Contact</div><div class="label">Contact</div></a>
 			<div class="filler"></div>
-			<a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow Us" id="twitter" style="height: 50px;"><div class="label">Follow Us</div></a>
+			<a href="http://www.twitter.com/alumnispaces" target="_blank" title="Follow Us" id="twitter" style="height: 50px;"><div class="label">Follow Us</div><div class="label">Follow Us</div></a>
 			<div class="filler"></div>
-			<a href="http://www.facebook.com/alumnispaces" target="_blank" title="Find Us on Facebook" id="facebook" style="height: 50px;"><div class="label">Find Us on Facebook</div></a>
+			<a href="http://www.facebook.com/alumnispaces" target="_blank" title="Find Us on Facebook" id="facebook" style="height: 50px;"><div class="label">Find Us on Facebook</div><div class="label">Find Us on Facebook</div></a>
 			<div class="filler"></div>
-			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us" id="nav-email" style="height: 50px;"><div class="label">Email Us</div></a>
+			<a href="mailto:contact@alumnispaces.com" target="_blank" title="Email us" id="nav-email" style="height: 50px;"><div class="label">Email Us</div><div class="label">Email us</div></a>
 			<div id="filler_right"></div>
 		</td>
 		<td id="nav_left"><img src="images/empty.gif"></td>
@@ -328,74 +204,78 @@
 
 	<div class="slide container-fluid" id="slide1">
 		<div class="row">
-			<div class="col-md-2 col-md-offset-5">
-				 <div id="logo">
-				 </div>
+			<div class="col-md-12">
+				 <img id="logo" class="img-responsive" style="margin: 0 auto;" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/as_yukon.png">
 			</div>
 		</div>
 		<div class="row">
-			<div id="intro_img" class="col-md-8 col-md-offset-2"></div>
+			<div class="col-md-12">
+				<h2 id="tagline" class="impact_number">Bringing alumni home. Online.</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div id="intro_img" class="img_slide big_bg" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/intro.jpg);"></div>
 		</div>
 	</div>
 
 <!-- SLIDE 2 -->
 
-	<div class="slide container-fluid" id="slide2">
-			<h2 id="tagline" style="color: #fff; text-shadow: none;"></h2>
+	<div class="slide container-fluid img_slide big_bg" id="slide2" style="background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/vision_bg3.jpg');">
+				<h2 id="vision" class="text_overlay">We want to make organizations operate and engage more effectively by bridging the gap between online engagement and offline action.</h2>
 	</div>
 
 <!-- SLIDE 3 -->
 
 	<div class="slide container-fluid" id="slide3">
     <div class="row section_header">
-				<hr class="col-md-4" />
+				<hr class="col-md-4">
 				<div class="col-md-4">
-					<h2 id="slide_2_head" class="section_head"></h2>
+					<h2 id="slide_2_head" class="section_head">Our Team</h2>
 				</div>
-				<hr class="col-md-4" />
+				<hr class="col-md-4">
     </div> <!-- /row -->
     <div class="row team-bios">
       <div class="col-md-8 col-md-offset-2">
         <div class="row">
           <div class="col-md-4">
-            <h3 id="team_1_name"></h3>
+            <h3 id="team_1_name">Andrew Cafourek</h3>
             <div class="frame">
-              <div id="team_1_photo" class="circular">
+              <div id="team_1_photo" class="circular" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/andrew.jpg);">
                 <div style="display:block;clear:both;height:20px;"></div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading lead" id="team_1_tagline"></div>
+              <div class="panel-heading lead" id="team_1_tagline">Gizmos &amp; Gadgets</div>
               <div class="panel-body">
-                <span id="team_1_about" class="bio"></span>
+                <span id="team_1_about" class="bio"><ul class="list-group"><li class="list-group-item">Self-taught PHP developer with 6 years of hacking</li><li class="list-group-item">Former Product/Project Manager at Ripple6, acquired by Gannett in 2009</li><li class="list-group-item">1 of 4 members on the first social strategy team within WPP, circa 2007</li><li class="list-group-item">Avid traveller with commits from 17 countries in 3 years</li></ul></span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <h3 id="team_2_name"></h3>
+            <h3 id="team_2_name">Nick Trusty</h3>
             <div class="frame">
-              <div id="team_2_photo" class="circular">
+              <div id="team_2_photo" class="circular" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/nick.jpg);">
                 <div style="display:block;clear:both;height:20px;"></div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading lead" id="team_2_tagline"></div>
+              <div class="panel-heading lead" id="team_2_tagline">People &amp; Coin</div>
               <div class="panel-body">
-                <span id="team_2_about" class="bio"></span>
+                <span id="team_2_about" class="bio"><ul class="list-group"><li class="list-group-item">Former talent agent who maintained relationships with over 500 buyers across the US and simultaneously represented a roster of over 30 artists</li><li class="list-group-item">Oversaw the development, release and testing of all client projects for A022 Digital</li><li class="list-group-item">Brewer of two well received beers, with a third one on the way</li></ul></span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <h3 id="team_3_name"></h3>
+            <h3 id="team_3_name">Rachel Anderson</h3>
             <div class="frame">
-              <div id="team_3_photo" class="circular">
+              <div id="team_3_photo" class="circular" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/rachel.jpg);">
                 <div style="display:block;clear:both;height:20px;"></div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading lead" id="team_3_tagline"></div>
+              <div class="panel-heading lead" id="team_3_tagline">Wordsmithing &amp; Propoganda</div>
               <div class="panel-body">
-                <span id="team_3_about" class="bio"></span>
+                <span id="team_3_about" class="bio"><ul class="list-group"><li class="list-group-item">Former Higher Ed Alumni Relations &amp; Fundraising professional for a large public university</li><li class="list-group-item">Head of marketing experience with a top global human capital consulting firm </li><li class="list-group-item">Government Affairs experience in the higher education and transportation industries</li><li class="list-group-item">Midwesterner at heart and in practice</li></ul></span>
               </div>
             </div>
           </div>
@@ -404,58 +284,65 @@
 
     </div><!-- /team bios -->
 		</div>
-	</div>
+	
 
 <!-- SLIDE 4 -->
 
 	<div class="slide container-fluid" id="slide4">
     <div class="row section_header">
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
         <div class="col-md-4">
-          <h2 id="slide_4_head" class="section_head"></h2>
+          <h2 id="slide_4_head" class="section_head">The Opportunity</h2>
         </div>
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
     </div> <!-- /row -->
     <div class="row">
-			<div id="slide_4_body" class="col-md-8 col-md-offset-2">
-				<h3 id="slide_4_tagline" class="slide_tagline"></h3>
+			<div id="slide_4_body" class="img_slide big_bg" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/opportunity_bg4.jpg);">
+				<h3 id="slide_4_tagline" class="slide_tagline text_overlay">Alumni associations need a clearer picture of what is happening on the ground level. Groups want to engage more local alumni. Both lack the resources and digital toolset to be effective.</h3>
 			</div>
 			<div class="col-md-2"></div>
     </div> <!-- /row -->
     <div class="row section_header">
         <div class="col-md-2 col-md-offset-5">
-          <h2 id="slide_4_midhead" class="section_head"></h2>
+          <h2 id="slide_4_midhead" class="section_head">Problem</h2>
 				<div class="arrow-down arrow-orange"></div>
         </div>
     </div> <!-- /row -->
+    
+									
+									
     <div class="row problems">
-    		<div class="col-md-1"></div>
-			<div class="col-md-3 box">
-				<span class="glyphicon glyphicon-tower"></span>
-				<h4 id="box1_head"></h4>
-				<p id="box1_text"></p>
-			</div>
-			<div class="col-md-3 box">
-				<span class="glyphicon glyphicon-globe"></span>
-				<h4 id="box2_head"></h4>
-				<p id="box2_text"></p>
-			</div>
-			<div class="col-md-3 box">
-				<span class="glyphicon glyphicon-fire"></span>
-				<h4 id="box3_head"></h4>
-				<p id="box3_text"></p>
+    	<div class="col-md-10 col-md-offset-2">
+    			<div class="row">
+				<div class="col-md-3 box">
+					<span id="box1_glyph"><span class="glyphicon glyphicon-align-justify"></span></span>
+					<h4 id="box1_head">Consistency </h4>
+					<p id="box1_text">"Which logo should I use on the website?" "Whats the hex code for Spartan Red? Wait, what is a hex code?" <span class="light break">Groups are plagued by ugly unbranded websites that look like GeoCities circa 1998</span></p>
+				</div>
+				<div class="col-md-3 box">
+					<span id="box2_glyph"><span class="glyphicon glyphicon-globe"></span></span>
+					<h4 id="box2_head">Organization</h4>
+					<p id="box2_text">"I add what to where?" "How do I track that?" "Who do I turn my receipt into?" "Did you get my email?" <span class="light break">Some groups have to provide the same information to up to six different systems</span></p>
+				</div>
+				<div class="col-md-3 box">
+					<span id="box3_glyph"><span class="glyphicon glyphicon-eye-close"></span></span>
+					<h4 id="box3_head">Clarity</h4>
+					<p id="box3_text">"Which group is performing the best?" "How many events happened last week and how well were they attended?" <span class="light break">Only 45% of schools have strategic reporting tools in place.</span></p>
+				</div>
+    			</div>
 			</div>
     	</div>
-    </div><!-- /row -->
      <div class="row section_header">
         <div class="col-md-2 col-md-offset-5">
-          <h2 id="slide_4_bottomhead" class="section_head"></h2>
+          <h2 id="slide_4_bottomhead" class="section_head">Solution</h2>
 				<div class="arrow-down arrow-teal"></div>
         </div>
     </div> <!-- /row -->
     <div class="row solution">
 		<div class="col-md-8 col-md-offset-2">
-			<div id="bottom_box" class="box"></div>
+			<div id="bottom_box" class="box">
+				A single platform that provides each level of an association the tools necessary to successfully serve their members.
+			</div>
 		</div>
     </div><!-- /row -->
 	</div>
@@ -464,17 +351,25 @@
 
 <div class="slide container-fluid" id="slide5">
     <div class="row section_header">
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
         <div class="col-md-4">
-          <h2 id="slide_5_head" class="section_head"></h2>
+          <h2 id="slide_5_head" class="section_head">Product</h2>
         </div>
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
     </div> <!-- /row -->
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h3 id="slide_5_tagline" class="slide_tagline"></h3>
-			<div id="slide_5_body">
-			</div><!--/5 body -->
+			<h3 id="slide_5_tagline" class="slide_tagline">Symphony</h3>
+			<div id="slide_5_bottom">
+				<h4 class="impact_number">The local group creates content</h4>
+					<img class="img-responsive product" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/product1.jpg" />
+				<h4 class="impact_number prod_head">Then they publicize it</h4>
+				<h4 class="impact_number prod_head">The alumni association back home sees everyone's activity</h4>
+				
+				<div class="embeded_vid">
+					<iframe src="//player.vimeo.com/video/76466044?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				</div>
+			</div>
 		</div>
 	</div><!-- /row -->
 </div><!-- /slide -->
@@ -483,69 +378,132 @@
 
 <div class="slide container-fluid" id="slide6">
 	<div class="row section_header">
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
         <div class="col-md-4">
-          <h2 id="slide_6_head" class="section_head"></h2>
+          <h2 id="slide_6_head" class="section_head">Market and Revenue</h2>
         </div>
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
     </div> <!-- /row -->
     <div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<div id="slide_6_box" class="box"></div>
+			<div id="slide_6_box" class="box"><span class="light">Current focus:</span><br><h3 class="slide_tagline">Alumni Associations</h3>We are currently focused on partnering with universities in the United States.</div>
 			<div class="arrow-down arrow-orange"></div>
 		</div>
 	</div> <!-- /row -->
     <div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<div id="slide_6_tagline"></div>
+			<div id="slide_6_tagline"><span class="light">Advancement spend by 4-year institutions in 2010:</span><h4 class="impact_number">$17 Billion</h4></div>
 			<div class="dashed vert col-md-offset-6"></div>
 		</div>
 		<div class="row section_header">
 	        <div class="col-md-2 col-md-offset-5">
-	          <div id="slide_6_bottomhead" class="section_head light teal" style="font-size: inherit;"></div>
-					<div class="arrow-down arrow-teal"></div>
+	          <div id="slide_6_midhead" class="section_head light light-blue" style="font-size: inherit;">2 Sources of Revenue</div>
+					<div class="arrow-down arrow-dark-blue"></div>
 	        </div>
 		</div> <!-- /row section header-->
     </div> <!-- /row -->
     <div class="row revenue">
     	<div class="col-md-4 col-md-offset-2">
-    		<div class="box" id="slide_6_box1">
-    		</div>
+    		<div class="box" id="slide_6_box1"><h4>Independent Group</h4><h5 class="dark-blue">Ensemble</h5><p>Independent groups who need an affordable, easy-to-use, beautiful website and a centralized outbound communications hub</p><hr><h4 class="impact_number"><span class="light-blue">$200</span> Annually</h4></div>
     	</div>
     	<div class="col-md-4">
     		<div class="box" id="slide_6_box2">
-    		</div>
+    			<h4>Organizations</h4>
+    			<h5 class="dark-blue">Symphony</h5>
+    			<p>Associations can have 100+ groups spread around the globe using Alumni Spaces to power their sites. The Association gains insights and tools into the overall operation and health of their member groups that were previously unavailable.</p>
+    			<hr>
+    			<h4 class="impact_number"><span class="light-blue">$8,000&nbsp;</span> Setup<br /><span style="width: 100%; text-align: center; float: left;">+</span><br><span class="light-blue">$15,000</span> Annually</h4></div>
     	</div>
     </div><!-- /row -->
+    <hr style="margin: 3em 0;">
+    <div class="row">
+    	<div class="col-md-6 col-md-offset-3">
+			<div id="slide_6_bottombox1" class="box"><span class="light">Long-distance view:</span><br><h3 class="slide_tagline">Federated Organizations</h3>Groups that have a central strategic group guiding the operations of smaller, localized groups which generally operate semi-autonomously.</div>
+			<div class="arrow-down arrow-light-blue"></div>
+		</div>
+    </div><!-- /row -->
+     <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="dashed vert col-md-offset-6" style="margin-top: 0;"></div>
+		</div>
+		<div class="row section_header">
+	        <div class="col-md-2 col-md-offset-5">
+	          <div id="slide_6_bottomhead" class="section_head light light-blue" style="font-size: inherit;">For Example</div>
+			  	<div class="dashed vert col-md-offset-6" style="margin-top: 0;"></div>
+					<div class="arrow-down arrow-dark-blue"></div>
+	        </div>
+		</div> <!-- /row section header-->
+    </div> <!-- /row -->
+     <div class="row orgs">
+     	<div class="col-md-8 col-md-offset-2">
+    		<div class="box" id="slide_6_bottombox2">
+    			<div class="row">
+    			<ul class="col-md-6">
+    				<li>Fraternities and Sororities</li>
+    				<li>Labor Unions</li>
+    				<li>Fraternal Orders   <span class="light"><small>(Elks, Shriners)</small></span></li>
+					<li>Service Organizations   <span class="light"><small>(Kiwanis, Rotary, Lions)</small></span></li>
+					<li>Scouting Groups</li>
+    			</ul>
+    			<ul class="col-md-6">    			
+	    			<li>Support Organizations   <span class="light"><small>(Weight Watchers, AA/NA)</small></span></li>
+					<li>Environmental Groups   <span class="light"><small>(Sierra Club, ASPCA)</small></span></li>
+					<li>Military Organizations   <span class="light"><small>(VFW, American Legion, JROTC/ROTC)</small></span></li>
+					<li>Community Organizations   <span class="light"><small>(Red Cross, Salvation Army)</small></span></li>
+					<li>Trade Associations</li>
+    			</ul>
+    			</div>
+    		</div>
+    	</div>
+     </div>
 </div>
 
 <!-- SLIDE 7 -->
 
 <div class="slide container-fluid" id="slide7">
 	<div class="row section_header">
-	    <hr class="col-md-4" />
+	    <hr class="col-md-4">
 	    <div class="col-md-4">
-	      <h2 id="slide_7_head" class="section_head"></h2>
+	      <h2 id="slide_7_head" class="section_head">Customer Acquisition</h2>
 	    </div>
-	    <hr class="col-md-4" />
+	    <hr class="col-md-4">
 	</div> <!-- /row -->
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h3 id="slide_7_tagline" class="slide_tagline"></h3>
+			<h3 id="slide_7_tagline" class="slide_tagline">How are we going to get that chedda?</h3>
 			<div id="slide_7_body">
 			</div><!--/5 body -->
 		</div>
 	</div><!-- /row -->
 	 <div class="row customers">
     	<div class="col-md-4 col-md-offset-2">
-    		<div class="box" id="slide_7_box1">
-    		</div>
+    		<div class="box" id="slide_7_box1"><h4>Independent Groups</h4><p>Solving the affordable, easy-to-use, beautiful website problem for local chapters allows us to prove our worth and allows our clients to act as internal champions for Alumni Spaces within their national association.  Nothing better than a proven track record.</p><hr><h5 class="light">Current Clients</h5><br><img class="img-responsive" style="margin: 0 auto;" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/local_logos.png"></div>
     	</div>
     	<div class="col-md-4">
-    		<div class="box" id="slide_7_box2">
-    		</div>
+    		<div class="box" id="slide_7_box2"><h4>Partner Introductions</h4>Instead of guessing alumni association pain points, we worked closely with the Mizzou Alumni Association to understand  the issues and built Symphony in response. Higher education alumni associations are like a family - warm introductions are our friend. <blockquote>Symphony is a powerful tool for volunteer led alumni engagement.&nbsp; One integrated system now consolidates communication and marketing functions that were previously being replicated in as many as five different platforms.&nbsp; Staff and volunteer time has been freed up to focus on higher level engagement and support.</blockquote><span class="source">—Jayson Meyer<br> Director of Alumni Engagement<br>Mizzou Alumni Association</span></div>
     	</div>
     </div><!-- /row -->
+    <div class="row">
+    	<div class="col-md-8 col-md-offset-2">
+    		<div class="row">
+    			<h3>Other Channels</h3>
+    			<div class="col-md-6 other_channels">
+    				<h4>CASE Conferences</h4>
+    				<p>(Council for Advancement and Support of Education) Higher Ed professional association for alumni relations, communications, development, & marketing professionals</p>
+    			</div>
+	    		<div class="col-md-6 other_channels">
+		    		<h4>Web Summit and Beyond</h4>
+		    		<p>We were one of the select Alpha participants at the Web Summit in Dublin where we established some great international connections</p>
+	    		</div>
+    		</div>
+			<div class="row">
+				<div class="col-md-6 other_channels">
+					<h4>Research/Targeted Contact</h4>
+					<p>"Oh you’re an alumni volunteer?" "Oh your chapter has a website, have you heard of Alumni Spaces?" We don’t meet strangers.</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /row -->
 </div><!-- /slide -->
 
 <!-- SLIDE 8 -->
@@ -553,13 +511,13 @@
 	<div class="row section_header">
 	    <hr class="col-md-4" />
 	    <div class="col-md-4">
-	      <h2 id="slide_8_head" class="section_head"></h2>
+	      <h2 id="slide_8_head" class="section_head">WHERE WE'VE BEEN</h2>
 	    </div>
 	    <hr class="col-md-4" />
 	</div> <!-- /row -->
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h3 id="slide_8_tagline" class="slide_tagline"></h3>
+			<h3 id="slide_8_tagline" class="slide_tagline">What we have accomplished so far:</h3>
 			<div class="dashed vert col-md-offset-6" style="margin-top: -2em;"></div>
 			<div id="slide_8_body">
 			</div><!--/5 body -->
@@ -567,7 +525,7 @@
 	</div><!-- /row -->
 	<div class="row">
 		<div id="timeline" class="col-md-6 col-md-offset-3">
-		</div><!--/timeline -->
+		</div> <!-- timeline -->
 	</div>
 
 </div><!-- /slide -->
@@ -577,26 +535,28 @@
 
 <div class="slide container-fluid" id="slide9">
     <div class="row section_header">
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
         <div class="col-md-4">
-          <h2 id="slide_9_head" class="section_head"></h2>
+          <h2 id="slide_9_head" class="section_head">Investment</h2>
         </div>
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
     </div> <!-- /row -->
     <div class="row">
-			<div id="slide_9_body" class="col-md-8 col-md-offset-2">
-				<h3 id="slide_9_tagline" class="slide_tagline"></h3>
+			<div id="slide_9_body" class="col-md-8 col-md-offset-2" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/investors_bg.jpg);">
+				<h3 id="slide_9_tagline" class="slide_tagline">Let's talk money.</h3>
 			</div>
 			<div class="col-md-2"></div>
     </div> <!-- /row -->
      <div class="row">
 		<div class="col-md-4 col-md-offset-4 dollas">
-			<div id="slide_9_midhead"></div>
+			<div id="slide_9_midhead"><span class="light">Currently raising up to</span><h4 class="impact_number">$250,000</h4></div>
 			<div class="dashed vert col-md-offset-6"></div>
 		</div>
 		<div class="row section_header">
 	        <div class="col-md-2 col-md-offset-5">
-	          <div id="slide_9_bottomhead" class="section_head light teal" style="font-size: inherit;"></div>
+	          <div id="slide_9_bottomhead" class="section_head light teal" style="font-size: inherit;">
+		          To empower us to
+	          </div>
 					<div class="arrow-down arrow-teal"></div>
 	        </div>
 		</div> <!-- /row section header-->
@@ -604,34 +564,68 @@
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
     		<div class="box" id="slide_9_box">
+    			<div class="row">
+    				<div class="col-md-3 glyph">
+    					<h4 class="dark-blue">
+    						<span class="glyphicon glyphicon-magnet"></span>
+    					</h4>
+    				</div>
+    				<div class="col-md-8">
+    					<h4>Hire</h4>
+    						<p>With the right designer and developer on the team, we will greatly speed up our innovation.</p>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-3 glyph">
+    					<h4 class="dark-blue">
+    						<span class="glyphicon glyphicon-usd"></span>
+    					</h4>
+    				</div>
+    				<div class="col-md-8">
+    					<h4>Sell</h4>
+    						<p>Conference exhibits cost about as much as tuition it seems, but that is where we will get the word out.</p>
+    				</div>
+    			</div>
+    			<div class="row bottom">
+    				<div class="col-md-3 glyph">
+    					<h4 class="dark-blue">
+    						<span class="glyphicon glyphicon-road"></span>
+    					</h4>
+    				</div>
+    				<div class="col-md-8">
+    					<h4>Focus</h4>
+    					<p>With a funding runway, we can devote 100% of our attention on the long-term takeoff.</p>
+    				</div>
+    			</div>
     		</div>
     	</div>
 	</div>
 </div><!-- /slide -->
 
 <!-- /FIN -->
-<div class="slide container-fluid" id="fin">
+<div class="slide container-fluid" id="slide10">
 	<div class="row section_header">
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
         <div class="col-md-4 contact">
-        	<a class="row contact_badge pull-left" href="" id="contact_email">
+        	<a class="row contact_badge pull-left" href="mailto:contact@alumnispaces.com" id="contact_email">
         		<div class="col-md-10 contact_left">
-        			<span id="contact_text"></span>
+        			<span id="contact_text">Get in Touch</span>
         		</div>
         		<div class="col-md-2 email_badge">
         			<span class="glyphicon glyphicon-envelope"></span>
         		</div>
         	</a>
         </div>
-        <hr class="col-md-4" />
+        <hr class="col-md-4">
     </div> <!-- /row -->
     <div class="row text-muted" style="margin-top: 4em;">
     	<div class="col-md-1">
-    		&copy; This year.
+    		© This year.
     	</div>
     	<div class="col-md-4 col-md-offset-7">
     		Inspired by <a href="http://evr.st/investors" target="_blank">Everest</a>, rebuilt with <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a><!-- by <a href="https://twitter.com/acafourek" target="_blank">@acafourek</a> -->.
     	</div>
     </div>
 </div><!-- /fin fin -->
+
 </body></html>
