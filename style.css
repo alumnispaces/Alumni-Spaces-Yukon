@@ -22,7 +22,7 @@ h1 {
 TAG DEFINITIONS
 ******************************************/
 body {
-	background: #faf8f3 url(images/bg-pattern.png) center top;
+	background: #faf8f3 url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/bg-pattern.png') center top;
 	font-family: 'Montserrat', sans-serif;
 	color: #555;
 }
@@ -44,7 +44,7 @@ h1 {
 a img {border: none; }
 
 hr {
-	background: url('images/hr.png') repeat-x;
+	background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/hr.png') repeat-x;
 	width: 100%;
 	height: 2px;
 	border: none;
@@ -86,7 +86,7 @@ NAVIGATION
 	top: 0;
 	left: 0;
 	z-index: 10;
-	background: #faf8f3 url(images/bg-pattern.png) center top;
+	background: #faf8f3 url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/bg-pattern.png') center top;
 }
 	#nav_left:before, #nav_right:before {
 		display: block;
@@ -105,7 +105,7 @@ NAVIGATION
 			position: relative;
 			width: 47px;
 /*			height: 22px;*/
-			background: url(images/social-buttons.png) no-repeat -282px 0;
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/social-buttons.png') no-repeat -282px 0;
 			border-top: none;
 			padding: 18px 0 12px;
 			text-align: center;
@@ -120,25 +120,25 @@ NAVIGATION
 			color: #615e5a;
 		}
 		#nav_center a#homelink {
-			background: url(images/as-button.png) no-repeat 0 0;
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/as-button.png') no-repeat 0 0;
 		}
 		#nav_center a#ehomelink:hover {
 			background-position: -47px 0;
 		}
 		#nav_center a#twitter {
-			background: url(images/social-buttons.png) no-repeat -94px 0;
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/social-buttons.png') no-repeat -94px 0;
 		}
 		#nav_center a#twitter:hover {
 			background-position: -141px 0;
 		}
 		#nav_center a#facebook {
-			background: url(images/social-buttons.png) no-repeat 0 0;
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/social-buttons.png') no-repeat 0 0;
 		}
 		#nav_center a#facebook:hover {
 			background-position: -47px 0;
 		}
 		#nav_center a#nav-email {
-			background: url(images/social-buttons.png) no-repeat -188px 0;
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/social-buttons.png') no-repeat -188px 0;
 		}
 		#nav_center a#angellist:hover {
 			background-position: -235px 0;
@@ -164,7 +164,7 @@ NAVIGATION
 		#nav_center .filler {
 			height: 56px;
 			width: 23px;
-			background: url(images/nav-filler.png) repeat-x 0 29px;
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/nav-filler.png') repeat-x 0 29px;
 			float: left;
 		}
 		#nav_center .filler:before, #filler_left, #filler_right {
@@ -215,7 +215,7 @@ COMMON CLASSES
 .transition {
 	height: 71px;
 	width: 100%;
-	background: url(images/dotted-bg.png) repeat-x 0 93px;
+	background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/dotted-bg.png') repeat-x 0 93px;
 	text-align: center;
 	padding: 0px 0 0;
 }
@@ -224,7 +224,7 @@ COMMON CLASSES
 		display: inline-block;
 		width: 199px;
 		height: 71px;
-		background: url(images/next-prev-buttons.png) no-repeat 0 0;
+		background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/next-prev-buttons.png') no-repeat 0 0;
 		margin: 0 27px;
 	}
 	.transition .next:hover { background-position: 0 -71px; }
@@ -255,7 +255,7 @@ COMMON CLASSES
 }
 
 .title th {
-	background: url(images/dotted-bg.png) repeat-x 0 60px;
+	background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/dotted-bg.png') repeat-x 0 60px;
 }
 
 .section_head{
@@ -376,7 +376,7 @@ SLIDE 2  VISION
 		color: #fff;
 	}
 	#slide2 .title th {
-		background-image: url(images/dotted-bg-blue.png);
+		background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/dotted-bg-blue.png');
 	}
 
 	h2#vision {
@@ -388,7 +388,7 @@ SLIDE 2  VISION
 	}
 
 	#slide2 .transition {
-		background-image: url(images/dotted-bg-blue.png);
+		background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/dotted-bg-blue.png');
 		margin-bottom: 160px;
 		padding-bottom: 160px;
 	}
@@ -559,12 +559,6 @@ h4.prod_head {
 /******************************************
 SLIDE 6  MARKET SIZE
 ******************************************/
-#marketsize {
-	width: 940px;
-	height: 1900px;
-	background: url(images/users.jpg) no-repeat;
-}
-
 #slide6 .box { 
 	padding: 3em;
 	margin-bottom: 0;
@@ -609,12 +603,6 @@ SLIDE 7 CUSTOMER ADOPTION
 #slide7 .box {
 	text-align: left;
 }
-#customeradoption {
-	width: 940px;
-	height: 1100px;
-	background: url(images/customer-development.jpg) no-repeat;
-}
-
 .other_channels {
 	padding: 0 2em 1em;
 }
@@ -677,12 +665,6 @@ h3#slide_9_tagline {
 /******************************************
 SLIDE 10  THE INVESTMENT
 ******************************************/
-#the-investment {
-	width: 940px;
-	height: 810px;
-	background: url(images/theinvestment.jpg) no-repeat;
-	margin-bottom: -340px;
-}
 
 #b-plan-fb {
 	position: absolute;
