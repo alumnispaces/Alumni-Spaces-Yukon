@@ -705,10 +705,10 @@ a.contact_badge {
 	text-transform: uppercase;
 	font-size: 1.4em;
 	line-height: .6em;
-	color: #1a496e;
+	color: #279cdc;
 }
 a.contact_badge:hover {
-	color: #279cdc;
+	color: #1a496e;
 }
 .contact_left {
 	padding: 2em 0;
@@ -720,7 +720,7 @@ a.contact_badge:hover {
 }
 .email_badge .glyphicon {
 	margin-top: -.3em;
-	color: #1a496e;
+	color: #279cdc;
 }
 
 .social {
