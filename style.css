@@ -190,6 +190,11 @@ NAVIGATION
 COMMON CLASSES
 ******************************************/
 
+img#logo {
+	transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg); 
+}
 .slide {
 	position: relative;
 	margin: 3em 0;
@@ -637,19 +642,18 @@ SLIDE 8  B-MODEL
 /******************************************
 SLIDE 9  ACCOMPLISHMENTS
 ******************************************/
-#slide_9_body {
-	background-repeat: no-repeat;
-	height: 500px;
-}
+
 h3#slide_9_tagline {
-	margin-top: 20%;	
+	padding: 2em 0;	
 }
 
 .dollas {
 	text-align: center;
 	margin-top: 3em;
 }
-
+#slide_9_midhead {
+	padding: 15px 5px;
+}
 #slide_9_box .glyph {
 	margin-top: 6%;
 }
