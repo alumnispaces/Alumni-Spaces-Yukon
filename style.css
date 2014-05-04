@@ -378,8 +378,8 @@ SLIDE 2  VISION
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
-	overflow: hidden;
-	padding: 1.75em 1em;
+	padding: 0;
+	margin-top: 0;
 }
 	#slide2 h1 {
 		color: #fff;
@@ -388,12 +388,14 @@ SLIDE 2  VISION
 		background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/dotted-bg-blue.png');
 	}
 
-	h2#vision {
-		font-size: 72px;
+	h3#vision {
+		font-size: 42px;
 		text-align: center;
 		font-weight: 600;
 		color: #fff;
 		text-shadow: 2px 3px 6px #333;
+		margin-top: 0;
+		padding: 2em 1em;
 	}
 
 	#slide2 .transition {
