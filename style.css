@@ -604,8 +604,14 @@ SLIDE 6  MARKET SIZE
 	padding: 2em 4em;
 }
 
-#slide6 .orgs .box span.light {
-	margin-left: 15px;
+.org-label {
+	text-align: center;
+	margin-bottom: 1.5em;
+	height: 3em;
+}
+
+.org-names {
+	text-align: center;
 }
 
 /******************************************
