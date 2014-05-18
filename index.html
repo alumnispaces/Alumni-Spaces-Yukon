@@ -646,7 +646,7 @@
 	<script type="text/javascript">
 	
 	//setup google Analytics event tracking
-	$('.ga-event').on('click', function() {
+	$(document).on('click', '.ga-event', function() {
 		var category = $(this).data('category');
 		var action = $(this).data('action');
 		var label = $(this).data('label');
