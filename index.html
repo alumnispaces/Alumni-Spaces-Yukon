@@ -238,7 +238,7 @@
 				<div class="col-md-3 box">
 					<span id="box3_glyph"><span class="glyphicon glyphicon-eye-close"></span></span>
 					<h4 id="box3_head">Clarity</h4>
-					<p id="box3_text">"Which group is performing the best?" "How many events happened last week and how well were they attended?" <span class="light break">Only 45% of schools have strategic reporting tools in place.<a href="https://www.dropbox.com/s/qgdmsf36hc5xgzo/UseofTechnologyJuly2012.pdf" target="_blank" class="ga-event" data-category="footnote" action="click" label ="Problem 3 Source">2012 Use of Technology  for Development & Alumni Constituent Relations Among CASE Members</a><br />  <sup id="fnref:1" class="bigfoot"><a href="#fn:problem3" rel="footnote">1</a></sup></span></p>
+					<p id="box3_text">"Which group is performing the best?" "How many events happened last week and how well were they attended?" <span class="light break">Only 45% of schools have strategic reporting tools in place.<a href="https://www.dropbox.com/s/qgdmsf36hc5xgzo/UseofTechnologyJuly2012.pdf" target="_blank" class="ga-event" data-category="footnote" data-action="click" data-label ="Problem 3 Source">2012 Use of Technology  for Development & Alumni Constituent Relations Among CASE Members</a><br />  <sup id="fnref:1" class="bigfoot"><a href="#fn:problem3" rel="footnote">1</a></sup></span></p>
 				</div>
     			</div>
 			</div>
@@ -629,7 +629,7 @@
 	<div class="footnotes">
 		<ol>
 	    	<li class="footnote" id="fn:problem3">
-	        	<p>Source: <a href="https://www.dropbox.com/s/qgdmsf36hc5xgzo/UseofTechnologyJuly2012.pdf" target="_blank" class="ga-event" data-category="footnote" action="click" label ="Problem 3 Source">2012 Use of Technology  for Development & Alumni Constituent Relations Among CASE Members</a>. July 2012<a href="#fnref:1" title="return to article"> ↩</a><p>
+	        	<p>Source: <a href="https://www.dropbox.com/s/qgdmsf36hc5xgzo/UseofTechnologyJuly2012.pdf" target="_blank" class="ga-event" data-category="footnote" data-action="click" data-label ="Problem 3 Source">2012 Use of Technology  for Development & Alumni Constituent Relations Among CASE Members</a>. July 2012<a href="#fnref:1" title="return to article"> ↩</a><p>
 			</li>
 		</ol>
 	</div>
@@ -647,11 +647,11 @@
 	
 	//setup google Analytics event tracking
 	$('.ga-event').on('click', function() {
-		var category = $(this).data('cat');
+		var category = $(this).data('category');
 		var action = $(this).data('action');
 		var label = $(this).data('label');
 		var val = $(this).data('val');
-		
+
 	  ga('send', 'event', category, action, label,val);
 	});
 	
