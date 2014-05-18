@@ -238,7 +238,7 @@
 				<div class="col-md-3 box">
 					<span id="box3_glyph"><span class="glyphicon glyphicon-eye-close"></span></span>
 					<h4 id="box3_head">Clarity</h4>
-					<p id="box3_text">"Which group is performing the best?" "How many events happened last week and how well were they attended?" <span class="light break">Only 45% of schools have strategic reporting tools in place.  <sup id="fnref:1"><a href="#fn:problem3" rel="footnote">1</a></sup></span></p>
+					<p id="box3_text">"Which group is performing the best?" "How many events happened last week and how well were they attended?" <span class="light break">Only 45% of schools have strategic reporting tools in place.<br />  <sup id="fnref:1" class="bigfoot"><a href="#fn:problem3" rel="footnote">1</a></sup></span></p>
 				</div>
     			</div>
 			</div>
@@ -645,8 +645,6 @@
 	<script type="text/javascript" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/bigfoot.min.js"></script>
 	<script type="text/javascript">
 	
-	$(document).ready(function($) {
-	
 	//setup google Analytics event tracking
 	$('.ga-event').on('click', function() {
 		var category = $(this).data('cat');
@@ -656,6 +654,9 @@
 		
 	  ga('send', 'event', category, action, label,val);
 	});
+	
+	$(document).ready(function($) {
+	
 	  //powerup footnotes
 	  $.bigfoot();
 
