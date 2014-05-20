@@ -642,3 +642,10 @@ a.contact_badge:hover {
 .social {
   margin-top: 2em;
 }
+.footnote-main-wrapper ul {
+  list-style-type: none;
+  color: #AAA;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
