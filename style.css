@@ -421,6 +421,18 @@ h2#slide_4_midhead,
 h2#slide_4_bottomhead {
   margin: 2em 0 0 0;
 }
+span.header-line {
+  clear: both;
+  display: block;
+  margin-bottom: .4em;
+}
+#slide_4_tagline {
+  margin: 0;
+  padding-bottom: 5em;
+}
+#slide_4_tagline span:last-of-type {
+  margin-bottom: 0;
+}
 .arrow-down {
   width: 0;
   height: 0;
