@@ -367,6 +367,9 @@ h3#vision {
 /******************************************
 SLIDE 3  TEAM
 ******************************************/
+h3.secondary_tagline {
+  margin: 2em 0;
+}
 .team-bios {
   text-align: center;
 }
