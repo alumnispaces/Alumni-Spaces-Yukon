@@ -406,7 +406,8 @@ SLIDE 3  TEAM
 ******************************************/
 
 h3.secondary_tagline {
-	margin: 2em 0;
+	margin: 2em 0 1.5em 0;
+	text-align: center;
 }
 .team-bios {
 	text-align: center;
@@ -583,6 +584,18 @@ SLIDE 6  MARKET SIZE
 	}
 }
 
+.lecture {
+	text-align: left;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+#slide6 {
+	h3.secondary_tagline {
+		margin: 0 0 1em 0;
+	}
+}
+
 #slide_6_tagline, #slide_6_bottomtagline {
 	text-align: center;
 	margin-top: 2em;
@@ -603,6 +616,9 @@ SLIDE 6  MARKET SIZE
 	}
 }
 
+.federated {
+	margin-bottom: 1em;
+}
 #slide6 .orgs .box {
 	margin: 0;
 	padding: 2em 4em;
@@ -611,7 +627,7 @@ SLIDE 6  MARKET SIZE
 
 .org-label {
 	text-align: center;
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 	height: 3em;
 }
 
@@ -627,6 +643,22 @@ SLIDE 7 CUSTOMER ADOPTION
 }
 .other_channels {
 	padding: 0 2em 1em;
+}
+
+img.client-logos {
+	margin: 1.5em auto;
+}
+
+.testimonial_container {
+	position: relative;
+	min-height: 200px;
+	.quovolve-box{
+		position: absolute;
+	}
+	
+	ul#testimonials {
+		list-style-type: none;
+	}
 }
 
 /******************************************
@@ -649,6 +681,14 @@ SLIDE 8  B-MODEL
 
 	.glyphicon {
 		margin-top: 20%;
+	}
+	h5.impact_number {
+		margin: 0;
+		display: inline;
+	}
+	span.impact_label {
+		margin: 0 .5em;
+		display: inline;
 	}
 }
 
@@ -749,8 +789,10 @@ a.contact_badge {
 
 //Footnotes
 .footnote-main-wrapper {
+	max-width: 55em;
 	ul {
 		list-style-type: none;
+		text-align: left;
 		.light;
 	}
 }
