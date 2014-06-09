@@ -550,6 +550,9 @@ SLIDE 6  MARKET SIZE
   padding: 2em;
   text-align: left;
 }
+.vert {
+  margin-top: 0em;
+}
 .federated {
   margin-bottom: 1em;
 }
