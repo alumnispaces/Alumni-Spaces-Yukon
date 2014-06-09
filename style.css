@@ -595,9 +595,9 @@ img.client-logos {
   list-style-type: none;
 }
 /******************************************
-SLIDE 8  B-MODEL
+SLIDE 9  B-MODEL
 ******************************************/
-#slide8 .vert {
+#slide9 .vert {
   height: 2em;
 }
 #timeline .box {
@@ -627,29 +627,31 @@ SLIDE 8  B-MODEL
   /*	background: url(images/b-plan.jpg) no-repeat; */
 }
 /******************************************
-SLIDE 9  ACCOMPLISHMENTS
+SLIDE 10  Investment
 ******************************************/
-h3#slide_9_tagline {
-  padding: 2em 0;
+h3#slide_10_tagline {
+  padding: 3em 0;
   font-size: 4em;
+  margin-bottom: 0;
 }
 .dollas {
   text-align: center;
   margin-top: 3em;
 }
-#slide_9_midhead {
+#slide_10_midhead {
   padding: 15px 5px;
+  line-height: 1em;
 }
-#slide_9_box .glyph {
+#slide_10_box .glyph {
   margin-top: 6%;
 }
-#slide_9_box .col-md-8 {
+#slide_10_box .col-md-8 {
   text-align: left;
 }
-#slide_9_box .row {
+#slide_10_box .row {
   border-bottom: 2px #FFF groove;
 }
-#slide_9_box .bottom {
+#slide_10_box .bottom {
   border-bottom: none;
 }
 /******************************************
