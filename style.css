@@ -516,6 +516,9 @@ h4.prod_head {
 /******************************************
 SLIDE 6  MARKET SIZE
 ******************************************/
+#slide6 {
+  margin-bottom: 0;
+}
 #slide6 .box {
   padding: 3em;
   margin-bottom: 0;
@@ -554,7 +557,7 @@ SLIDE 6  MARKET SIZE
   margin-top: 0em;
 }
 .federated {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 #slide6 .orgs .box {
   margin: 0;
