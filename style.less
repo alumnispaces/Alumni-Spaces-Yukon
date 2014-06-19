@@ -296,8 +296,16 @@ img#logo {
 	font-size: 2.5em;
 }
 
-.dashed {
+.dashed-left {
 	border-left: 2px dashed #ccc;
+}
+.dashed-bottom {
+	border-bottom: 2px dashed #ccc;
+}
+.dashed-sides {
+	border-left: 2px dashed #ccc;
+	border-right: 2px dashed #ccc;
+	border-bottom: 2px dashed #ccc;
 }
 
 	////Colors
@@ -494,6 +502,29 @@ span.header-line {
 	}
 }
 
+#slide_4_midbox {
+	margin: 0;
+	
+	img {
+		display: inline;
+		margin-right: .75em;
+	}
+}
+
+.no-pad-right {
+	padding-right: 0;
+}
+.no-pad-left {
+	padding-left: 0;
+}
+.connector {
+	height: 2em;
+}
+
+.horizontal-connector {
+	margin: 1em 1em 1em 0;
+	padding: 1em 1em 1em 0;
+}
 .arrow-down {
 	width: 0; 
 	height: 0; 
@@ -537,9 +568,10 @@ span.header-line {
 	padding: 2em;
 	color: #222;
 	font-size: 1.75em;
-	margin-top: 1em;
+	margin: 1em 0 0 0;
 	text-shadow: 0px 2px 3px #ccc;
 }
+
 /******************************************
 SLIDE 5   PRODUCT
 ******************************************/
@@ -574,6 +606,7 @@ h4.prod_head {
 		left: 0; 
 		width: 100%; 
 		height: 100%; 
+		color: darken(#843000,10%);
 	}
 }
 	
@@ -665,7 +698,7 @@ img.client-logos {
 
 .testimonial_container {
 	position: relative;
-	min-height: 200px;
+	min-height: 250px;
 	.quovolve-box{
 		position: absolute;
 	}
@@ -801,6 +834,38 @@ a.contact_badge {
 
 .social {
 	margin-top: 2em;
+}
+
+.bottom-social {
+	text-align: center;
+	
+	.soc-container {
+		margin: 0 auto;
+		width: 20%;
+	}
+	a {
+		display: block;
+		width: 47px;
+		float: left;
+		margin: 0 1em;
+		padding: 18px 0 12px;
+		text-decoration: none;
+	
+		&#twitter {
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/social-buttons.png') no-repeat -94px 0;
+			
+			&:hover {
+				background-position: -141px 0;
+			}
+		}
+		&#facebook {
+			background: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/images/social-buttons.png') no-repeat 0 0;
+			
+			&:hover {
+				background-position: -47px 0;
+			}
+		}
+	}
 }
 
 //Footnotes
