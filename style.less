@@ -403,6 +403,15 @@ SLIDE 2  VISION
 	}
 }
 
+.vision-container {
+	background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/gear.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
 	h3#vision {
 		font-size: 42px;
 		text-align: center;
@@ -410,7 +419,7 @@ SLIDE 2  VISION
 		text-shadow: 2px 3px 6px #bcb3b3;
 		margin-top: 0;
 		margin-bottom: 0;
-		padding: 1em 0 0 0;
+		padding: 1.1em 0 2.5em 0;
 	}
 
 /******************************************
@@ -508,8 +517,7 @@ span.header-line {
 	margin: 0;
 	
 	img {
-		display: inline;
-		margin-right: .75em;
+		margin: 0 auto;
 	}
 }
 
@@ -524,8 +532,30 @@ span.header-line {
 }
 
 .horizontal-connector {
-	margin: 1em 1em 1em 0;
+	margin: 1em 1em 1em 0em;
 	padding: 1em 1em 1em 0;
+	
+	@media(min-width:1200px){
+		margin-left: -1.5em;
+	}
+}
+.middle-line {
+	width: 0;
+	margin: 0 auto;
+}
+
+.vert-holder {
+	
+	@media(min-width:1200px){
+		margin-left: -1em;
+	}
+}
+.center-arrow {	
+	margin-left: .2em;
+	
+	@media(min-width:1200px){
+		margin-left: -.85em;
+	}
 }
 .arrow-down {
 	width: 0; 

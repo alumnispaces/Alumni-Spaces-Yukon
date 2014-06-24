@@ -367,6 +367,12 @@ SLIDE 2  VISION
   margin-bottom: 160px;
   padding-bottom: 160px;
 }
+.vision-container {
+  background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/gear.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 h3#vision {
   font-size: 42px;
   text-align: center;
@@ -374,7 +380,7 @@ h3#vision {
   text-shadow: 2px 3px 6px #bcb3b3;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1em 0 0 0;
+  padding: 1.1em 0 2.5em 0;
 }
 /******************************************
 SLIDE 3  TEAM
@@ -457,8 +463,7 @@ span.header-line {
   margin: 0;
 }
 #slide_4_midbox img {
-  display: inline;
-  margin-right: .75em;
+  margin: 0 auto;
 }
 .no-pad-right {
   padding-right: 0;
@@ -470,8 +475,30 @@ span.header-line {
   height: 2em;
 }
 .horizontal-connector {
-  margin: 1em 1em 1em 0;
+  margin: 1em 1em 1em 0em;
   padding: 1em 1em 1em 0;
+}
+@media (min-width: 1200px) {
+  .horizontal-connector {
+    margin-left: -1.5em;
+  }
+}
+.middle-line {
+  width: 0;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .vert-holder {
+    margin-left: -1em;
+  }
+}
+.center-arrow {
+  margin-left: .2em;
+}
+@media (min-width: 1200px) {
+  .center-arrow {
+    margin-left: -0.85em;
+  }
 }
 .arrow-down {
   width: 0;
