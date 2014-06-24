@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
 /******************************************
 TAG DEFINITIONS
 ******************************************/
@@ -315,10 +315,12 @@ img#logo {
   padding: 1em;
 }
 .big_bg {
-  background: no-repeat scroll 0px 100% cover transparent;
   background-position: center;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 .lead {
   font-size: 19px;
@@ -351,7 +353,7 @@ SLIDE 2  VISION
   background-attachment: fixed;
   background-position: center;
   padding: 0;
-  margin-top: 0;
+  margin-top: 4em;
   margin-bottom: 0;
 }
 #slide2 h1 {
