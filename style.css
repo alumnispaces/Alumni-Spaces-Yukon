@@ -463,6 +463,8 @@ span.header-line {
 }
 #slide_4_midbox img {
   margin: 0 auto;
+  height: 35px;
+  width: 35px;
 }
 .no-pad-right {
   padding-right: 0;
