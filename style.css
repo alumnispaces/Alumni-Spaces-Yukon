@@ -534,6 +534,7 @@ span.header-line {
   font-size: 1.5em;
 }
 .solution .box {
+  color: #484848;
   background: none;
   background-image: url('http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/pirate.png');
   background-repeat: no-repeat;
@@ -542,10 +543,12 @@ span.header-line {
   min-height: 400px;
   text-align: center;
   padding: 3em;
-  color: #222;
   font-size: 1.75em;
   margin: 1em 0 0 0;
   text-shadow: 0px 2px 3px #ccc;
+}
+.solution .box .power {
+  color: #222;
 }
 /******************************************
 SLIDE 5   PRODUCT
