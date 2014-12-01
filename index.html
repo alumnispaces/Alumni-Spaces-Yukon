@@ -634,6 +634,15 @@ Yb,_,dP       `8b,,d8b,_ ,d8b,  ,d8b,,dP   8I   8I   Yb,,dP   8I   Yb,_,88,_ "88
     			</div>
 			</div>
     	</div>
+    	<div class="row">
+    	<div class="col-md-6 col-md-offset-3 no-pad-right text-center">
+	    	<br />
+			<span class="light">Acquisition Costs:</span>
+			<h4 class="impact_number"><span class="light-blue">Ensemble:</span> $20-30</h4>
+			<h4 class="impact_number"><span class="light-blue">Symphony:</span> $1,500-2,000</h4>	
+			<span class="light">Based on actual cost, not including time-spent.</span>	
+		</div>
+    </div><!-- /row -->
 </div><!-- /slide -->
 <!-- Slide 8 competition-->
 <div class="slide" id="slide8">
@@ -691,10 +700,11 @@ Yb,_,dP       `8b,,d8b,_ ,d8b,  ,d8b,,dP   8I   8I   Yb,,dP   8I   Yb,_,88,_ "88
     </div> <!-- /row -->
      <div class="row">
 			<div id="slide_10_body" class="img_slide big_bg" style="background-image: url(http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/invest_bg.png);">
-				<h3 id="slide_10_tagline" class="slide_tagline text_overlay">Be a part of it.</h3>
+				<h3 id="slide_10_tagline" class="slide_tagline text_overlay">Be a part of it. <br />Soon.</h3>
 			</div>
 			<div class="col-md-2"></div>
     </div> <!-- /row -->
+    <div class="row moneymoney">
      <div class="row">
 		<div class="col-md-4 col-md-offset-4 dollas">
 			<div id="slide_10_midhead"><span class="light">Currently Raising </span><h4 class="impact_number">$500,000</h4>our first outside investment</div>
@@ -751,9 +761,10 @@ Yb,_,dP       `8b,,d8b,_ ,d8b,  ,d8b,,dP   8I   8I   Yb,,dP   8I   Yb,_,88,_ "88
     					<p>With a funding runway of at least 18 months, we can devote 100% of our attention on the long-term takeoff.</p>
     				</div>
     			</div>
-    		</div>
-    	</div>
-	</div>
+    		</div><!-- /box -->
+    	</div><!-- /4 -->
+	</div><!-- /row -->
+	</div><!-- /row -->
 </div><!-- /slide -->
 
 <!-- /FIN -->
@@ -880,6 +891,7 @@ of Social Media in Advancement</a> conducted by CASE, mStoner, and Slover Linett
 	<script type="text/javascript" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/bigfoot.min.js"></script>
 	<script type="text/javascript" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/jquery.quovolver.min.js"></script>
+	<script type="text/javascript" src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/jquery.foggy.min.js"></script>
 	<script src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/highcharts/highcharts.js"></script>
 	<script src="http://d3dhhryxzq9zg6.cloudfront.net/as-site/investors/js/highcharts/highcharts-more.js"></script>
 	<script type="text/javascript">
@@ -1019,6 +1031,12 @@ of Social Media in Advancement</a> conducted by CASE, mStoner, and Slover Linett
 	  $.bigfoot({
 		  positionContent: false
 	  });
+	  
+	$('.moneymoney').foggy({
+	   blurRadius: 5,          // In pixels.
+	   opacity: 0.9,           // Falls back to a filter for IE.
+	   cssFilterSupport: true  // Use "-webkit-filter" where available.
+	}); 
 
 	  $('ul#testimonials').quovolver({
 		  autoPlay: true,
@@ -1076,9 +1094,9 @@ of Social Media in Advancement</a> conducted by CASE, mStoner, and Slover Linett
 						icon_color: '#f17902'
 					},
 					{
-						date: '2014',
-						title: 'Next Up...',
-						desc:	'Donation processing, new front-end framework, event checkins and integration of CRM tools.',
+						date: '2015',
+						title: '2015 Roadmap',
+						desc:	'<strong>Product</strong><br /><ul><li>Donation Processing <small>($)</small></li><li>E-commerce for Ensemble <small>($)</small></li><li>CRM integrations</li><li>Improved Event Management/Ticketing Tools <small>(via integrations)</small></li><li>Expanded front-end template options for Ensemble</li></ul><strong>Growth</strong><br /><ul><li>5 Symphony Clients (Q2)</li><li>15% monthly Ensemble subscriber growth</li></ul>',
 						icon:	'forward',
 						icon_color: '#85144B'
 					}
