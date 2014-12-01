@@ -592,6 +592,16 @@ SLIDE 6  MARKET SIZE
 #slide6 {
   margin-bottom: 0;
 }
+.customers .box .glyphicon {
+  display: inline;
+  margin-right: .5em;
+}
+.customers .box h4 {
+  display: inline;
+}
+.customers .box ul {
+  padding-left: 3.75em;
+}
 #slide6 .box {
   padding: 3em;
   margin-bottom: 0;
